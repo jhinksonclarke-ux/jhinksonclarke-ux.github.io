@@ -1,0 +1,17 @@
+{
+  "name": "shader-jay-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "One-page portfolio for Jordan Hinkson-Clarke, 3D Designer & Visualizer (Shader Jay).",
+  "type": "module",
+  "scripts": {
+    "media": "node tools/encode-videos.mjs && node tools/optimize-images.mjs",
+    "images": "node tools/optimize-images.mjs",
+    "serve": "serve -l 5173 ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.6",
+    "sharp": "^0.35.4",
+    "subset-font": "^2.7.0"
+  }
+}

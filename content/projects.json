@@ -1,0 +1,192 @@
+{
+  "categories": {
+    "environment": "Environment Art",
+    "hard-surface": "Hard Surface Modelling",
+    "motion": "Motion Loops",
+    "product": "Product Placement"
+  },
+  "projects": [
+    {
+      "slug": "ascension",
+      "title": "Ascension",
+      "category": "environment",
+      "year": "2025",
+      "image": "environments_art_ Ascension_2025.png",
+      "alt": "A golden figure floating in a shaft of light above a dark, flooded cavern hung with stalactites",
+      "description": "A golden figure rises through a shaft of light in a flooded cavern, framed by hanging stalactites and teal-lit brickwork."
+    },
+    {
+      "slug": "terra",
+      "title": "Terra",
+      "category": "product",
+      "year": "2025",
+      "image": "Product_Placement_Advert_Terra_SodaCan_2025.png",
+      "video": "terra-soda",
+      "alt": "A lime soda can bursting through a splash of water, limes and leaves in a Spanish-language advert layout",
+      "description": "A lime soda visualised two ways: a Spanish-language poster, and a 10-second spot of splashes, condensation and a pull-tab close-up."
+    },
+    {
+      "slug": "resonance",
+      "title": "Resonance",
+      "category": "environment",
+      "year": "2021",
+      "image": "environments_art_ Resonance_2021.png",
+      "alt": "A kneeling figure at the end of a tunnel of glowing magenta rings reflected in still water at blue hour",
+      "description": "A kneeling figure at the end of a tunnel of glowing magenta rings, doubled in the still water of a blue-hour shoreline."
+    },
+    {
+      "slug": "pendulum",
+      "title": "Pendulum",
+      "category": "motion",
+      "year": "2021",
+      "video": "pendulum",
+      "alt": "Rows of glowing pink and amber orbs swinging on long strings against a dark background",
+      "description": "A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle."
+    },
+    {
+      "slug": "the-last-memory",
+      "title": "The Last Memory",
+      "category": "environment",
+      "year": "2026",
+      "image": "environments_art_The_Last_Memory_2026.png",
+      "alt": "Two figures sitting face to face in a dark, overgrown temple courtyard with a small glowing bloom in the doorway",
+      "description": "Two figures sit facing each other in a dark, overgrown temple courtyard, lit only by a small bioluminescent bloom in the doorway."
+    },
+    {
+      "slug": "zest-and-zing",
+      "title": "Zest & Zing",
+      "category": "product",
+      "year": "2024–25",
+      "image": "Product_Placement_Advert_Zest_and_Zing_SodaCan_2024.png",
+      "video": "zest-zing",
+      "alt": "Two blood-orange soda cans surrounded by lightning, splashes and orange slices in a bold advert layout",
+      "description": "A blood-orange soda in two parts: a 2024 poster of crackling lightning and splashes, and a 2025 spot of pours and pull-tab close-ups."
+    },
+    {
+      "slug": "fractured-world",
+      "title": "Fractured World",
+      "category": "environment",
+      "year": "2022",
+      "image": "environments_art_ Fractured_World_2022.png",
+      "alt": "A giant figure traced in electric-blue light rising from a rocky surface in space, holding a small planet",
+      "description": "A giant figure traced in electric-blue light rises from a rocky surface into open space, holding a small planet in one hand."
+    },
+    {
+      "slug": "fruits-and-juice",
+      "title": "Fruits & Juice",
+      "category": "hard-surface",
+      "year": "2019",
+      "image": "Hard_Surface_Fruits_and_Juice_2019.png",
+      "alt": "A glass of juice with ice cubes and a straw between an apple and an orange under soft pink light",
+      "description": "A study in glass, ice and liquid: a glass of juice with ice and a straw, set between an apple and an orange under soft pink light."
+    },
+    {
+      "slug": "genesis",
+      "title": "Genesis",
+      "category": "environment",
+      "year": "2021",
+      "image": "environments_art_ Genesis_2021.png",
+      "alt": "A crouching figure in a flooded colonnade facing a blazing golden disc where two hands cradle an egg",
+      "description": "A figure crouches in a flooded colonnade before a blazing golden disc, where two hands cradle an egg."
+    },
+    {
+      "slug": "crawling",
+      "title": "Crawling",
+      "category": "motion",
+      "year": "2022",
+      "video": "crawling",
+      "alt": "A figure covered in rippling red and blue light crawling towards the camera across a dark floor",
+      "description": "A figure wrapped in rippling red and blue light crawls towards the camera across a dark, reflective floor."
+    },
+    {
+      "slug": "wanderers",
+      "title": "Wanderers",
+      "category": "environment",
+      "year": "2026",
+      "image": "environments_art_Wanderers_2026.png",
+      "alt": "Two pale figures walking over golden sand dunes under a low sun, casting long shadows",
+      "description": "Two pale figures cross golden dunes under a low sun, their shadows stretching long across the sand."
+    },
+    {
+      "slug": "silk-lotus",
+      "title": "Silk Lotus",
+      "category": "product",
+      "year": "2026",
+      "image": "Product_Placement_Advert_Silk_Lotus_Face Serum_2026.png",
+      "alt": "A face serum dropper bottle on pink water among lotus flowers in a Chinese and English beauty advert",
+      "description": "A face serum staged on still pink water among lotus flowers, laid out as a bilingual Chinese and English beauty advert."
+    },
+    {
+      "slug": "temple-of-mind",
+      "title": "Temple of Mind",
+      "category": "environment",
+      "year": "2022",
+      "image": "environments_art_Temple of Mind_2022 .png",
+      "alt": "A seated figure on a circular platform above the clouds with a red arched bridge rising to a torii gate",
+      "description": "A lone figure rests on a circular platform above the clouds, where a red arched bridge climbs to a torii gate."
+    },
+    {
+      "slug": "water-pillar",
+      "title": "Water Pillar",
+      "category": "motion",
+      "year": "2019",
+      "video": "water-pillar",
+      "alt": "A spiralling column of blue water twisting upwards against a pale sky",
+      "description": "A column of water spirals up from the ground and twists into shape against a pale sky, then fades out to restart the loop."
+    },
+    {
+      "slug": "limbo",
+      "title": "Limbo",
+      "category": "environment",
+      "year": "2021",
+      "image": "environments_art_Limbo_2021.png",
+      "alt": "A figure draped in a white sheet standing on still water while bodies hang limp in the misty air",
+      "description": "A draped, faceless figure stands on mirror-still water while bodies hang motionless in the misty air around it."
+    },
+    {
+      "slug": "citrus-crown",
+      "title": "Citrus Crown",
+      "category": "product",
+      "year": "2025",
+      "image": "Product_Placement_advert_Citrus_Crown_2025.png",
+      "alt": "An orange juice bottle on wet rock among sliced oranges and palm leaves in a French-language advert",
+      "description": "A premium orange juice bottle on wet rock among sliced oranges and palm leaves, laid out as a French-language summer advert."
+    },
+    {
+      "slug": "departure",
+      "title": "Departure",
+      "category": "environment",
+      "year": "2022",
+      "image": "environments_art_Departure_2022.png",
+      "alt": "A small boat on calm water between two wooded islands at sunset, with birds in the sky",
+      "description": "A small boat waits between two wooded islands as the sun sets over calm water."
+    },
+    {
+      "slug": "snowbound",
+      "title": "Snowbound",
+      "category": "environment",
+      "year": "2022",
+      "image": "environments_art_ Snowbound_2022.png",
+      "alt": "A lone figure meditating in rolling snow during snowfall, with a distant stone tower",
+      "description": "A lone figure meditates in a field of drifting snow, a distant stone tower just visible through the haze."
+    },
+    {
+      "slug": "canopy",
+      "title": "Canopy",
+      "category": "environment",
+      "year": "2022",
+      "image": "environments_art_Canopy_2022 .png",
+      "alt": "An aerial view of dense green forest broken by pale rock outcrops, with birds in a bright sky",
+      "description": "An aerial view over a dense forest canopy broken by pale rock outcrops, with birds circling in a bright sky."
+    },
+    {
+      "slug": "a-frame-house",
+      "title": "A-Frame House",
+      "category": "environment",
+      "year": "2022",
+      "image": "environment_art_A_Frame_House_2022.png",
+      "alt": "A black A-frame cabin in deep snow surrounded by pine trees in low winter sun",
+      "description": "A black A-frame cabin half-buried in snow among pine trees, caught in low winter sunlight."
+    }
+  ]
+}

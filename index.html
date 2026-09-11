@@ -1,0 +1,1100 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Jordan Hinkson-Clarke | 3D Designer &amp; Visualizer, London</title>
+  <meta name="description" content="Jordan Hinkson-Clarke (Shader Jay) is a London-based 3D designer and visualizer making environments, product visuals, motion loops and game-ready assets in Blender.">
+  <meta name="author" content="Jordan Hinkson-Clarke">
+  <link rel="canonical" href="https://jhinksonclarke-ux.github.io/">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#E6EBF0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#021A2B" media="(prefers-color-scheme: dark)">
+  <script>
+    // Runs before first paint so a pinned theme never flashes the system one.
+    (function () {
+      var d = document.documentElement;
+      d.classList.remove('no-js');
+      d.classList.add('js');
+      try {
+        var t = localStorage.getItem('color-scheme');
+        if (t === 'light' || t === 'dark') {
+          d.setAttribute('data-theme', t);
+          document.querySelector('meta[name="color-scheme"]').content = t;
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="preload" href="assets/fonts/saira-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/saira-text.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Shader Jay">
+  <meta property="og:title" content="Jordan Hinkson-Clarke | 3D Designer &amp; Visualizer">
+  <meta property="og:description" content="Environments, product visuals, motion loops and game-ready assets, made in Blender in London.">
+  <meta property="og:url" content="https://jhinksonclarke-ux.github.io/">
+  <meta property="og:image" content="https://jhinksonclarke-ux.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:alt" content="Jordan Hinkson-Clarke, 3D Designer and Visualizer, London, beside three render cards arranged in a spiral.">
+  <meta name="twitter:image:alt" content="Jordan Hinkson-Clarke, 3D Designer and Visualizer, London, beside three render cards arranged in a spiral.">
+  <meta property="og:locale" content="en_GB">
+  <meta property="profile:first_name" content="Jordan">
+  <meta property="profile:last_name" content="Hinkson-Clarke">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/img/brand/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://jhinksonclarke-ux.github.io/#jordan","name":"Jordan Hinkson-Clarke","alternateName":"Shader Jay","honorificSuffix":"BSc, MA","jobTitle":"3D Designer & Visualizer","description":"London-based 3D designer specialising in environments, products and game-ready assets in Blender.","url":"https://jhinksonclarke-ux.github.io/","email":"mailto:jhinksonclarke@gmail.com","image":"https://jhinksonclarke-ux.github.io/assets/img/brand/icon-512.png","address":{"@type":"PostalAddress","addressLocality":"London","addressCountry":"GB"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"BSc Computer Animation"},{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"MA Computer Animation"}],"knowsAbout":["3D modelling","Environment art","Hard surface modelling","Motion loops","Product visualisation","Game-ready assets","Blender"],"sameAs":["https://www.linkedin.com/in/jordan-hinkson-clarke/","https://www.instagram.com/shaderjay/"]},{"@type":"WebSite","@id":"https://jhinksonclarke-ux.github.io/#website","url":"https://jhinksonclarke-ux.github.io/","name":"Jordan Hinkson-Clarke | Shader Jay","inLanguage":"en-GB","publisher":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}]}</script>
+  <!-- build:itemlist -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Selected work by Jordan Hinkson-Clarke","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"CreativeWork","name":"Ascension","genre":"Environment Art","dateCreated":"2025","description":"A golden figure rises through a shaft of light in a flooded cavern, framed by hanging stalactites and teal-lit brickwork.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/ascension-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":2,"item":{"@type":"CreativeWork","name":"Terra","genre":"Product Placement","dateCreated":"2025","description":"A lime soda visualised two ways: a Spanish-language poster, and a 10-second spot of splashes, condensation and a pull-tab close-up.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/terra-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":3,"item":{"@type":"CreativeWork","name":"Resonance","genre":"Environment Art","dateCreated":"2021","description":"A kneeling figure at the end of a tunnel of glowing magenta rings, doubled in the still water of a blue-hour shoreline.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/resonance-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":4,"item":{"@type":"CreativeWork","name":"Pendulum","genre":"Motion Loops","dateCreated":"2021","description":"A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/pendulum-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":5,"item":{"@type":"CreativeWork","name":"The Last Memory","genre":"Environment Art","dateCreated":"2026","description":"Two figures sit facing each other in a dark, overgrown temple courtyard, lit only by a small bioluminescent bloom in the doorway.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/the-last-memory-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":6,"item":{"@type":"CreativeWork","name":"Zest & Zing","genre":"Product Placement","dateCreated":"2024","description":"A blood-orange soda in two parts: a 2024 poster of crackling lightning and splashes, and a 2025 spot of pours and pull-tab close-ups.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/zest-and-zing-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":7,"item":{"@type":"CreativeWork","name":"Fractured World","genre":"Environment Art","dateCreated":"2022","description":"A giant figure traced in electric-blue light rises from a rocky surface into open space, holding a small planet in one hand.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/fractured-world-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":8,"item":{"@type":"CreativeWork","name":"Fruits & Juice","genre":"Hard Surface Modelling","dateCreated":"2019","description":"A study in glass, ice and liquid: a glass of juice with ice and a straw, set between an apple and an orange under soft pink light.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/fruits-and-juice-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":9,"item":{"@type":"CreativeWork","name":"Genesis","genre":"Environment Art","dateCreated":"2021","description":"A figure crouches in a flooded colonnade before a blazing golden disc, where two hands cradle an egg.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/genesis-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":10,"item":{"@type":"CreativeWork","name":"Crawling","genre":"Motion Loops","dateCreated":"2022","description":"A figure wrapped in rippling red and blue light crawls towards the camera across a dark, reflective floor.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/crawling-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":11,"item":{"@type":"CreativeWork","name":"Wanderers","genre":"Environment Art","dateCreated":"2026","description":"Two pale figures cross golden dunes under a low sun, their shadows stretching long across the sand.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/wanderers-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":12,"item":{"@type":"CreativeWork","name":"Silk Lotus","genre":"Product Placement","dateCreated":"2026","description":"A face serum staged on still pink water among lotus flowers, laid out as a bilingual Chinese and English beauty advert.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/silk-lotus-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":13,"item":{"@type":"CreativeWork","name":"Temple of Mind","genre":"Environment Art","dateCreated":"2022","description":"A lone figure rests on a circular platform above the clouds, where a red arched bridge climbs to a torii gate.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/temple-of-mind-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":14,"item":{"@type":"CreativeWork","name":"Water Pillar","genre":"Motion Loops","dateCreated":"2019","description":"A column of water spirals up from the ground and twists into shape against a pale sky, then fades out to restart the loop.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/water-pillar-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":15,"item":{"@type":"CreativeWork","name":"Limbo","genre":"Environment Art","dateCreated":"2021","description":"A draped, faceless figure stands on mirror-still water while bodies hang motionless in the misty air around it.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/limbo-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":16,"item":{"@type":"CreativeWork","name":"Citrus Crown","genre":"Product Placement","dateCreated":"2025","description":"A premium orange juice bottle on wet rock among sliced oranges and palm leaves, laid out as a French-language summer advert.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/citrus-crown-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":17,"item":{"@type":"CreativeWork","name":"Departure","genre":"Environment Art","dateCreated":"2022","description":"A small boat waits between two wooded islands as the sun sets over calm water.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/departure-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":18,"item":{"@type":"CreativeWork","name":"Snowbound","genre":"Environment Art","dateCreated":"2022","description":"A lone figure meditates in a field of drifting snow, a distant stone tower just visible through the haze.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/snowbound-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":19,"item":{"@type":"CreativeWork","name":"Canopy","genre":"Environment Art","dateCreated":"2022","description":"An aerial view over a dense forest canopy broken by pale rock outcrops, with birds circling in a bright sky.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/canopy-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}},{"@type":"ListItem","position":20,"item":{"@type":"CreativeWork","name":"A-Frame House","genre":"Environment Art","dateCreated":"2022","description":"A black A-frame cabin half-buried in snow among pine trees, caught in low winter sunlight.","image":"https://jhinksonclarke-ux.github.io/assets/img/work/a-frame-house-card-640.webp","creator":{"@id":"https://jhinksonclarke-ux.github.io/#jordan"}}}]}</script>
+  <!-- /build:itemlist -->
+
+  <style>
+    @font-face {
+      font-family: "Saira";
+      src: url("assets/fonts/saira-text.woff2") format("woff2");
+      font-weight: 400 700;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "Saira Display";
+      src: url("assets/fonts/saira-display.woff2") format("woff2");
+      font-weight: 800;
+      font-display: swap;
+    }
+    /* Arial tuned to Saira's proportions, so text barely moves when the web font arrives. */
+    @font-face {
+      font-family: "Saira Fallback";
+      src: local("Arial");
+      size-adjust: 98%;
+      ascent-override: 102%;
+      descent-override: 34%;
+      line-gap-override: 0%;
+    }
+    @font-face {
+      font-family: "Saira Display Fallback";
+      src: local("Arial Black"), local("Arial Bold");
+      size-adjust: 96%;
+      ascent-override: 98%;
+      descent-override: 30%;
+      line-gap-override: 0%;
+    }
+    :root {
+      color-scheme: light dark;
+
+      /* Shader Jay palette */
+      --navy: #03273F;
+      --navy-deep: #021A2B;
+
+      --bg: light-dark(#E6EBF0, #021A2B);
+      --bg-raised: light-dark(#F4F6F8, #062740);
+      --ink: light-dark(#03263E, #E7EDF2);
+      --ink-soft: light-dark(#3A566C, #A7BACB);
+      --line: light-dark(#B9C6D2, #1C3F5B);
+      --focus: light-dark(#03263E, #F2F6F9);
+
+      /* Extruded name: silver face on a dark extrusion at night, navy on aluminium by day */
+      --face: light-dark(#03263E, #D9E1E8);
+      --side-near: light-dark(#7D95AA, #6A86A0);
+      --side-far: light-dark(#C9D4DE, #071D2F);
+      --drop: light-dark(rgb(3 38 62 / .16), rgb(0 0 0 / .5));
+
+      /* Blender-style viewport floor */
+      --grid-minor: light-dark(rgb(3 38 62 / .07), rgb(167 186 203 / .06));
+      --grid-major: light-dark(rgb(3 38 62 / .15), rgb(167 186 203 / .13));
+      --axis-x: light-dark(rgb(196 45 66 / .5), rgb(233 71 92 / .55));
+      --axis-y: light-dark(rgb(78 132 34 / .5), rgb(127 194 65 / .55));
+
+      /* One accent per discipline, taken from the renders */
+      --env: light-dark(#06735D, #3DDBB4);
+      --hard: light-dark(#1F52AD, #8FB8FF);
+      --motion: light-dark(#AC2863, #FF7DB8);
+      --product: light-dark(#8A5100, #FFB84D);
+
+      --font-text: "Saira", "Saira Fallback", system-ui, sans-serif;
+      --font-display: "Saira Display", "Saira Display Fallback", system-ui, sans-serif;
+      --gutter: clamp(1.25rem, 5vw, 3rem);
+      --header-h: 4rem;
+      --ease-out: cubic-bezier(.16, 1, .3, 1);
+      --card: 15rem;
+      --step: 12rem;
+    }
+    :root[data-theme="light"] { color-scheme: light; }
+    :root[data-theme="dark"] { color-scheme: dark; }
+
+    /* Browsers without light-dark() follow the system theme and hide the toggle. */
+    @supports not (color: light-dark(#000, #fff)) {
+      :root {
+        --bg: #E6EBF0; --bg-raised: #F4F6F8; --ink: #03263E; --ink-soft: #3A566C; --line: #B9C6D2; --focus: #03263E;
+        --face: #03263E; --side-near: #7D95AA; --side-far: #C9D4DE; --drop: rgb(3 38 62 / .16);
+        --grid-minor: rgb(3 38 62 / .07); --grid-major: rgb(3 38 62 / .15);
+        --axis-x: rgb(196 45 66 / .5); --axis-y: rgb(78 132 34 / .5);
+        --env: #06735D; --hard: #1F52AD; --motion: #AC2863; --product: #8A5100;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #021A2B; --bg-raised: #062740; --ink: #E7EDF2; --ink-soft: #A7BACB; --line: #1C3F5B; --focus: #F2F6F9;
+          --face: #D9E1E8; --side-near: #6A86A0; --side-far: #071D2F; --drop: rgb(0 0 0 / .5);
+          --grid-minor: rgb(167 186 203 / .06); --grid-major: rgb(167 186 203 / .13);
+          --axis-x: rgb(233 71 92 / .55); --axis-y: rgb(127 194 65 / .55);
+          --env: #3DDBB4; --hard: #8FB8FF; --motion: #FF7DB8; --product: #FFB84D;
+        }
+      }
+      .theme-toggle { display: none !important; }
+    }
+
+    [data-cat="environment"], [data-filter="environment"] { --accent: var(--env); }
+    [data-cat="hard-surface"], [data-filter="hard-surface"] { --accent: var(--hard); }
+    [data-cat="motion"], [data-filter="motion"] { --accent: var(--motion); }
+    [data-cat="product"], [data-filter="product"] { --accent: var(--product); }
+
+    /* ------------------------------------------------------------ base */
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html {
+      scroll-snap-type: y proximity;
+      scrollbar-gutter: stable;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      scrollbar-color: var(--line) transparent;
+    }
+    html.is-dragging { scroll-snap-type: none; }
+    html:has(dialog[open]) { overflow: hidden; }
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 400 1.0625rem/1.6 var(--font-text);
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+    }
+    img, video { display: block; max-width: 100%; height: auto; }
+    a { color: inherit; text-underline-offset: .2em; }
+    button { font: inherit; color: inherit; }
+    h1, h2, h3 { margin: 0; font-family: var(--font-display); font-weight: 800; line-height: 1.04; text-wrap: balance; }
+    p { margin: 0; text-wrap: pretty; }
+    ul, ol { margin: 0; padding: 0; list-style: none; }
+    :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+    ::selection { background: var(--ink); color: var(--bg); }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+      overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+    }
+    .container { width: min(100% - 2 * var(--gutter), 75rem); margin-inline: auto; }
+    .icon { width: 1.25rem; height: 1.25rem; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+
+    .skip-link {
+      position: fixed; z-index: 100; top: .75rem; left: .75rem;
+      padding: .75rem 1rem; border-radius: 6px;
+      background: var(--ink); color: var(--bg); font-weight: 600; text-decoration: none;
+      transform: translateY(-200%);
+    }
+    .skip-link:focus { transform: none; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+      min-height: 3rem; padding: 0 1.4rem; border: 1px solid var(--ink); border-radius: 6px;
+      background: transparent; color: var(--ink);
+      font: 600 1rem/1 var(--font-text); text-decoration: none; cursor: pointer;
+      transition: background-color .2s, color .2s, transform .15s;
+      touch-action: manipulation;
+    }
+    .btn:hover { background: color-mix(in srgb, var(--ink) 10%, transparent); }
+    .btn:active { transform: scale(.97); }
+    .btn--solid { background: var(--ink); color: var(--bg); }
+    .btn--solid:hover { background: color-mix(in srgb, var(--ink) 84%, var(--bg)); }
+
+    .icon-btn {
+      display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem;
+      border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--ink);
+      cursor: pointer; transition: background-color .2s, border-color .2s, opacity .2s;
+      touch-action: manipulation;
+    }
+    .icon-btn:hover { background: color-mix(in srgb, var(--ink) 10%, transparent); border-color: var(--ink-soft); }
+    .icon-btn:disabled { opacity: .38; cursor: default; background: transparent; }
+
+    /* ------------------------------------------------------------ header */
+
+    .site-header {
+      position: fixed; z-index: 40; inset: 0 0 auto;
+      height: var(--header-h);
+      display: flex; align-items: center; gap: .75rem;
+      padding-inline: var(--gutter);
+      padding-top: env(safe-area-inset-top);
+      background: linear-gradient(var(--bg) 40%, transparent);
+    }
+    /* Over the navy brands band the header takes the dark palette in either theme. */
+    .site-header.is-on-navy { color-scheme: dark; background: linear-gradient(var(--navy) 40%, transparent); }
+    .brand { display: block; margin-right: auto; border-radius: 3px; }
+    .brand img { height: 2.25rem; width: auto; }
+    .site-nav ul { display: flex; gap: .25rem; }
+    .site-nav a {
+      display: inline-flex; align-items: center; min-height: 2.75rem; padding: 0 .85rem;
+      border-radius: 6px; font-weight: 600; text-decoration: none; color: var(--ink-soft);
+      transition: color .2s, background-color .2s;
+    }
+    .site-nav a:hover { color: var(--ink); }
+    .site-nav a[aria-current="true"] { color: var(--ink); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .45em; }
+    .theme-toggle .icon-moon, :root[data-theme-state="dark"] .theme-toggle .icon-sun { display: block; }
+    .theme-toggle .icon-sun, :root[data-theme-state="dark"] .theme-toggle .icon-moon { display: none; }
+    .menu-toggle { display: none; }
+
+    @media (max-width: 47.99em) {
+      .menu-toggle { display: inline-grid; }
+      .site-nav {
+        position: absolute; inset: 100% 0 auto; padding: .5rem var(--gutter) 1.25rem;
+        background: var(--bg); border-bottom: 1px solid var(--line);
+        display: none;
+      }
+      .site-nav.is-open { display: block; }
+      .site-nav ul { flex-direction: column; }
+      .site-nav a { width: 100%; font-size: 1.25rem; padding-inline: 0; }
+      .no-js .site-nav { display: block; position: static; padding: 0; border: 0; background: none; }
+      .no-js .site-nav ul { flex-direction: row; }
+      .no-js .site-nav a { font-size: 1rem; padding-inline: .4rem; }
+    }
+
+    /* ------------------------------------------------------------ hero */
+
+    .hero {
+      position: relative; isolation: isolate;
+      min-height: 100svh;
+      display: grid; align-content: end;
+      padding: calc(var(--header-h) + 2rem) 0 clamp(3.5rem, 11vh, 7rem);
+      overflow: clip;
+      scroll-snap-align: start;
+    }
+    .hero__floor {
+      position: absolute; z-index: -1; left: -45%; right: -45%; bottom: 0; height: 150%;
+      transform: perspective(70rem) rotateX(60deg);
+      transform-origin: 50% 100%;
+      background-image:
+        linear-gradient(90deg, transparent calc(50% - 1px), var(--axis-y) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
+        linear-gradient(transparent calc(74% - 1px), var(--axis-x) calc(74% - 1px) calc(74% + 1px), transparent calc(74% + 1px)),
+        linear-gradient(var(--grid-major) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+        linear-gradient(var(--grid-minor) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-minor) 1px, transparent 1px);
+      background-size: auto, auto, 10rem 10rem, 10rem 10rem, 2rem 2rem, 2rem 2rem;
+      background-position: center, center, 50% 74%, 50% 74%, 50% 74%, 50% 74%;
+      -webkit-mask-image: linear-gradient(to top, #000 5%, transparent 55%);
+      mask-image: linear-gradient(to top, #000 5%, transparent 55%);
+      pointer-events: none;
+    }
+    .hero__content { width: min(100% - 2 * var(--gutter), 75rem); margin-inline: auto; }
+    @media (max-aspect-ratio: 4/5) {
+      .hero { align-content: center; padding-bottom: 7rem; }
+    }
+
+    .hero__name {
+      --tx: 0;
+      --ty: 0;
+      --ex: calc(.55 - var(--tx) * .9);
+      --ey: calc(.7 - var(--ty) * .9);
+      --d: .0085em;
+      font-size: clamp(2.25rem, 9.4vw, 8.5rem);
+      line-height: .94;
+      letter-spacing: -.01em;
+      color: var(--face);
+      transform: perspective(70rem) rotateY(calc(var(--tx) * 9deg)) rotateX(calc(var(--ty) * -7deg));
+      transform-origin: 35% 60%;
+      text-shadow:
+        calc(var(--ex) * var(--d)) calc(var(--ey) * var(--d)) 0 var(--side-near),
+        calc(var(--ex) * var(--d) * 2) calc(var(--ey) * var(--d) * 2) 0 color-mix(in oklab, var(--side-near), var(--side-far) 11%),
+        calc(var(--ex) * var(--d) * 3) calc(var(--ey) * var(--d) * 3) 0 color-mix(in oklab, var(--side-near), var(--side-far) 22%),
+        calc(var(--ex) * var(--d) * 4) calc(var(--ey) * var(--d) * 4) 0 color-mix(in oklab, var(--side-near), var(--side-far) 33%),
+        calc(var(--ex) * var(--d) * 5) calc(var(--ey) * var(--d) * 5) 0 color-mix(in oklab, var(--side-near), var(--side-far) 44%),
+        calc(var(--ex) * var(--d) * 6) calc(var(--ey) * var(--d) * 6) 0 color-mix(in oklab, var(--side-near), var(--side-far) 55%),
+        calc(var(--ex) * var(--d) * 7) calc(var(--ey) * var(--d) * 7) 0 color-mix(in oklab, var(--side-near), var(--side-far) 66%),
+        calc(var(--ex) * var(--d) * 8) calc(var(--ey) * var(--d) * 8) 0 color-mix(in oklab, var(--side-near), var(--side-far) 77%),
+        calc(var(--ex) * var(--d) * 9) calc(var(--ey) * var(--d) * 9) 0 color-mix(in oklab, var(--side-near), var(--side-far) 88%),
+        calc(var(--ex) * var(--d) * 10) calc(var(--ey) * var(--d) * 10) 0 var(--side-far),
+        calc(var(--ex) * var(--d) * 16) calc(var(--ey) * var(--d) * 22) calc(var(--d) * 30) var(--drop);
+    }
+    .hero__line { display: block; white-space: nowrap; }
+    .hero__line--last { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .35em; }
+    .hero__post {
+      font: 600 max(1rem, .19em)/1 var(--font-text);
+      letter-spacing: .02em;
+      color: var(--ink-soft);
+      text-shadow: none;
+    }
+    /* The name settles upright on load. A transform animation runs on the compositor,
+       so the extruded shadows are painted once rather than on every frame. */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero__name { animation: settle 1.3s var(--ease-out) .1s backwards; }
+    }
+    @keyframes settle { from { transform: perspective(70rem) rotateX(38deg) translateY(.18em); } }
+
+    .hero__role { margin-top: clamp(1.25rem, 3.5vh, 2.25rem); font: 600 clamp(1.2rem, 2.6vw, 1.85rem)/1.25 var(--font-text); }
+    .hero__intro { margin-top: .6rem; max-width: 34rem; color: var(--ink-soft); }
+    .hero__actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+
+    /* ------------------------------------------------------------ work: grid (no JS / reduced motion) */
+
+    .work { position: relative; padding: calc(var(--header-h) + 2rem) 0 5rem; scroll-snap-align: start; }
+    .work__head { width: min(100% - 2 * var(--gutter), 75rem); margin-inline: auto; }
+    .work__titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; }
+    .work__title { font-size: clamp(2.25rem, 5vw, 3.5rem); }
+    .view-toggle { display: none; }
+    .js .view-toggle { display: inline-flex; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
+    .view-toggle button {
+      min-height: 2.5rem; padding: 0 1rem; border: 0; border-radius: 999px;
+      background: transparent; color: var(--ink-soft); font-weight: 600; font-size: .9375rem; cursor: pointer;
+      transition: background-color .2s, color .2s;
+      touch-action: manipulation;
+    }
+    .view-toggle button:hover { color: var(--ink); }
+    .view-toggle button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+    .filters {
+      display: flex; gap: .5rem; overflow-x: auto; scrollbar-width: none;
+      margin: 1.25rem calc(var(--gutter) * -1) 0; padding: .25rem var(--gutter);
+      scroll-padding-inline: var(--gutter);
+    }
+    .filters::-webkit-scrollbar { display: none; }
+    .filter {
+      flex: none; display: inline-flex; align-items: center; gap: .55rem;
+      min-height: 2.75rem; padding: 0 1.05rem;
+      border: 1px solid var(--line); border-radius: 999px; background: transparent;
+      font-weight: 600; font-size: .9375rem; cursor: pointer;
+      transition: background-color .2s, color .2s, border-color .2s;
+      touch-action: manipulation;
+    }
+    .filter::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; background: var(--accent, transparent); box-shadow: inset 0 0 0 1.5px var(--accent, var(--ink-soft)); }
+    .filter:hover { border-color: var(--ink-soft); }
+    .filter[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+    .filter[aria-pressed="true"]::before { box-shadow: inset 0 0 0 1.5px var(--bg); }
+    .filter__count { font-variant-numeric: tabular-nums; opacity: .72; font-weight: 500; }
+    .work__hint { margin-top: .75rem; font-size: .9375rem; color: var(--ink-soft); display: none; }
+
+    .helix__track {
+      width: min(100% - 2 * var(--gutter), 75rem); margin: 2rem auto 0;
+      display: grid; gap: 2.5rem 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+    }
+    .card[hidden] { display: none; }
+    .card__float { display: block; }
+    .card__link {
+      position: relative; display: block; aspect-ratio: 1; overflow: hidden;
+      border-radius: 3px; background: var(--bg-raised);
+      outline: 1px solid color-mix(in srgb, var(--accent) 55%, transparent); outline-offset: -1px;
+      -webkit-user-drag: none; user-select: none;
+    }
+    .card__link:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .card__link img, .card__video { width: 100%; height: 100%; object-fit: cover; }
+    .card__video { position: absolute; inset: 0; opacity: 0; transition: opacity .4s; }
+    .card__video.is-playing { opacity: 1; }
+    .card__info { margin-top: .9rem; }
+    .card__title { font-size: 1.35rem; }
+    .card__meta { margin-top: .25rem; font-size: .9375rem; color: var(--ink-soft); }
+    .card__cat { color: var(--accent); font-weight: 600; }
+    .card__desc { margin-top: .5rem; font-size: .9375rem; }
+    .work__caption, .work__controls, .work__steps { display: none; }
+
+    /* ------------------------------------------------------------ work: helix */
+
+    .work.is-helix { padding: 0; }
+    .is-helix .work__stage {
+      position: sticky; top: 0; z-index: 1;
+      height: 100svh; overflow: clip;
+      user-select: none; -webkit-user-select: none;
+      touch-action: pan-y;
+    }
+    .is-helix .work__stage::before {
+      content: ""; position: absolute; top: 0; bottom: 0; left: var(--axis-left); width: 1px;
+      background: linear-gradient(transparent, var(--line) 18%, var(--line) 82%, transparent);
+    }
+    .is-helix .work__head {
+      position: absolute; z-index: 2; top: 0; left: 0; right: 0; width: auto;
+      padding: calc(var(--header-h) + .25rem) var(--gutter) 2rem;
+      background: linear-gradient(var(--bg) calc(100% - 2rem), transparent);
+    }
+    .is-helix .work__hint { display: block; }
+    .hint-touch { display: none; }
+    @media (pointer: coarse) { .hint-touch { display: inline; } .hint-pointer { display: none; } }
+
+    .is-helix .helix { position: absolute; inset: 0; perspective: var(--persp, 1400px); perspective-origin: var(--axis-left) var(--axis-top); }
+    .is-helix .helix__track {
+      position: absolute; left: var(--axis-left); top: var(--axis-top);
+      width: 0; height: 0; margin: 0; display: block;
+      transform-style: preserve-3d; will-change: transform;
+    }
+    .is-helix .card {
+      position: absolute; left: calc(var(--card) / -2); top: calc(var(--card) / -2);
+      width: var(--card); height: var(--card);
+    }
+    .is-helix .card__float { width: 100%; height: 100%; }
+    .is-helix .card__link { width: 100%; height: 100%; aspect-ratio: auto; cursor: pointer; transition: box-shadow .35s, outline-color .35s, transform .35s var(--ease-out); }
+    .is-helix .card__link::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background: var(--bg); opacity: var(--shade, 0);
+    }
+    .is-helix .card.is-back picture, .is-helix .card.is-back .card__video { visibility: hidden; }
+    .is-helix .card.is-back .card__link { background: color-mix(in srgb, var(--accent) 16%, var(--bg-raised)); }
+    .is-helix .card.is-active .card__link {
+      outline: 2px solid var(--accent); outline-offset: 0;
+      box-shadow: 0 0 3.5rem -0.75rem var(--accent);
+      transform: scale(1.06);
+    }
+    .is-helix .card__info { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+    @media (prefers-reduced-motion: no-preference) {
+      .is-helix .card__float { animation: card-float 7s ease-in-out infinite alternate; animation-delay: calc(var(--i) * -.9s); }
+      .work:not(.is-live) .card__float { animation-play-state: paused; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .is-helix .card__link { transition: none; }
+    }
+    @keyframes card-float { from { transform: translateY(-.4rem); } to { transform: translateY(.4rem); } }
+
+    .is-helix .work__caption {
+      display: block; position: absolute; z-index: 2; left: 0; right: 0; bottom: 0;
+      padding: 3rem var(--gutter) calc(1.25rem + env(safe-area-inset-bottom));
+      background: linear-gradient(transparent, var(--bg) 42%);
+    }
+    .caption__inner { max-width: 26rem; }
+    .caption__meta { font-size: .9375rem; font-weight: 600; color: var(--accent); }
+    .caption__title { margin-top: .15rem; font: 800 clamp(1.5rem, 3vw, 2.25rem)/1.05 var(--font-display); }
+    .caption__desc { margin-top: .5rem; color: var(--ink-soft); font-size: .9375rem; }
+    .caption__open { margin-top: 1rem; min-height: 2.75rem; }
+    .is-helix .work__controls {
+      display: flex; align-items: center; gap: .75rem;
+      position: absolute; z-index: 3; right: var(--gutter); bottom: calc(1.25rem + env(safe-area-inset-bottom));
+    }
+    .work__count { min-width: 4.5ch; text-align: center; font-variant-numeric: tabular-nums; font-weight: 600; }
+    .is-helix .work__steps { display: block; margin-top: -100svh; }
+    .work__step { height: var(--step); scroll-snap-align: start; }
+    .work__step:last-child { height: 100svh; }
+
+    @media (max-width: 63.99em) {
+      .caption__desc { display: none; }
+      .caption__open { display: none; }
+      .caption__inner { max-width: calc(100% - 10.5rem); }
+    }
+
+    /* Wide screens: controls live in a left column and the spiral gets the full height. */
+    @media (min-width: 64em) {
+      .is-helix .work__stage::after {
+        content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+        background:
+          linear-gradient(var(--bg) calc(var(--header-h) - .5rem), transparent calc(var(--header-h) + 5rem)),
+          linear-gradient(to top, var(--bg), transparent 5rem),
+          linear-gradient(90deg, var(--bg) 25%, color-mix(in srgb, var(--bg) 75%, transparent) 33%, transparent 45%);
+      }
+      .is-helix .work__head {
+        right: auto; width: calc(min(31vw, 30rem) + var(--gutter));
+        padding: calc(var(--header-h) + 1.75rem) 0 0 var(--gutter);
+        background: none;
+      }
+      .is-helix .filters { flex-wrap: wrap; overflow: visible; margin-inline: 0; padding-inline: 0; }
+      .is-helix .work__caption {
+        right: auto; width: calc(min(31vw, 30rem) + var(--gutter));
+        padding: 0 0 calc(5.75rem + env(safe-area-inset-bottom)) var(--gutter);
+        background: none;
+      }
+      .is-helix .work__controls { left: var(--gutter); right: auto; bottom: calc(2rem + env(safe-area-inset-bottom)); }
+    }
+
+    /* ------------------------------------------------------------ planes */
+
+    .plane { min-height: 100svh; display: grid; align-content: center; padding-block: calc(var(--header-h) + 2rem) 4rem; scroll-snap-align: start; }
+    .section-title { font-size: clamp(2.1rem, 5vw, 3.75rem); }
+
+    .brands { background: var(--navy); color: #E7EDF2; color-scheme: dark; }
+    .brands .section-title { max-width: 16ch; }
+    .brands__lede { margin-top: 1rem; max-width: 36rem; color: #A7BACB; }
+    .brands__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: clamp(2.5rem, 7vh, 4.5rem); background: #1C3F5B; border: 1px solid #1C3F5B; }
+    .brand-item { display: grid; place-items: center; min-height: clamp(7rem, 16vh, 10rem); padding: 1.5rem; background: var(--navy); }
+    .brand-item img { width: auto; height: var(--logo-h, 3rem); max-width: 100%; object-fit: contain; }
+    .brand-item--0207-def-jam { --logo-h: clamp(2.4rem, 5vw, 3.4rem); }
+    .brand-item--vfb-stuttgart { --logo-h: clamp(3.4rem, 8vw, 5rem); }
+    .brand-item--universal-music-group { --logo-h: clamp(2.6rem, 5.4vw, 3.6rem); }
+    .brand-item--metamerch { --logo-h: clamp(1.2rem, 2.6vw, 1.75rem); }
+    .brand-item--io-interactive { --logo-h: clamp(2.4rem, 5vw, 3.4rem); }
+    .brand-word { font: 800 clamp(1.4rem, 3.6vw, 2.2rem)/1 var(--font-display); letter-spacing: .01em; }
+    @media (min-width: 48em) { .brands__grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .story__grid { display: grid; gap: 2.5rem; }
+    .facts { display: grid; gap: 1.1rem; margin: 2rem 0 0; }
+    .facts div { border-top: 1px solid var(--line); padding-top: .8rem; }
+    .facts dt { font-size: .875rem; color: var(--ink-soft); }
+    .facts dd { margin: .15rem 0 0; font-weight: 600; }
+    .story__text { max-width: 38rem; }
+    .story__text p + p { margin-top: 1.1em; }
+    .story__lede { font-size: clamp(1.2rem, 2.2vw, 1.45rem); line-height: 1.5; }
+    .story__close { margin-top: 2rem !important; font: 800 clamp(1.35rem, 2.8vw, 2rem)/1.2 var(--font-display); text-wrap: balance; }
+    @media (min-width: 64em) {
+      .story__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(3rem, 7vw, 7rem); align-items: start; }
+      .facts { margin-top: 3rem; }
+    }
+
+    .contact .section-title { max-width: 15ch; font-size: clamp(2.25rem, 6vw, 4.75rem); }
+    .contact__lede { margin-top: 1.25rem; max-width: 30rem; color: var(--ink-soft); font-size: 1.15rem; }
+    .contact__email {
+      display: inline-block; margin-top: clamp(2rem, 6vh, 3.5rem);
+      font: 800 clamp(1.3rem, 5.4vw, 3.4rem)/1.1 var(--font-display);
+      overflow-wrap: anywhere; text-decoration-thickness: .06em; text-underline-offset: .18em;
+      text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+      transition: text-decoration-color .2s;
+    }
+    .contact__email:hover { text-decoration-color: currentColor; }
+    .contact__row { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; margin-top: 1.5rem; }
+    .copy-btn { display: none; }
+    .js .copy-btn { display: inline-flex; }
+    .copy-btn .icon-check, .copy-btn.is-done .icon-copy { display: none; }
+    .copy-btn.is-done .icon-check { display: block; }
+    .contact__links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
+    .contact__links a { display: inline-flex; align-items: center; gap: .6rem; min-height: 2.75rem; font-weight: 600; text-decoration: none; }
+    .contact__links a:hover { text-decoration: underline; }
+
+    .site-footer { border-top: 1px solid var(--line); }
+    .site-footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding-block: 1.5rem calc(1.5rem + env(safe-area-inset-bottom)); font-size: .875rem; color: var(--ink-soft); }
+    .site-footer a { min-height: 2.75rem; display: inline-flex; align-items: center; }
+
+    /* ------------------------------------------------------------ project viewer */
+
+    .viewer {
+      width: min(100% - 2rem, 78rem); max-width: none; max-height: calc(100svh - 2rem);
+      padding: 0; border: 1px solid var(--line); border-radius: 10px;
+      background: var(--bg-raised); color: var(--ink);
+      overflow: auto; overscroll-behavior: contain;
+    }
+    .viewer::backdrop { background: rgb(1 13 22 / .86); }
+    .viewer__inner { position: relative; display: grid; }
+    .viewer__media { display: grid; place-items: center; background: #01070C; min-height: 12rem; }
+    .viewer__media img, .viewer__media video { width: 100%; height: auto; max-height: calc(100svh - 2rem); object-fit: contain; }
+    .viewer__body { display: flex; flex-direction: column; gap: .75rem; padding: 1.5rem 1.5rem 1.75rem; }
+    .viewer__meta { font-weight: 600; color: var(--accent); font-size: .9375rem; }
+    .viewer__title { font-size: clamp(1.75rem, 3.5vw, 2.6rem); }
+    .viewer__desc { color: var(--ink-soft); }
+    .viewer__tabs { display: flex; gap: .5rem; }
+    .viewer__tabs[hidden] { display: none; }
+    .viewer__tab { min-height: 2.5rem; padding: 0 1rem; border: 1px solid var(--line); border-radius: 999px; background: transparent; cursor: pointer; font-weight: 600; font-size: .9375rem; }
+    .viewer__tab[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+    .viewer__nav { display: flex; align-items: center; gap: .75rem; margin-top: auto; padding-top: .75rem; }
+    .viewer__count { font-variant-numeric: tabular-nums; color: var(--ink-soft); font-size: .9375rem; }
+    .viewer__close { position: absolute; z-index: 2; top: .75rem; right: .75rem; background: color-mix(in srgb, var(--bg-raised) 80%, transparent); }
+    @media (min-width: 64em) {
+      .viewer__inner { grid-template-columns: minmax(0, 1fr) 24rem; min-height: min(44rem, calc(100svh - 2rem)); }
+      .viewer__body { padding: 4rem 2rem 2rem; }
+    }
+    @media (max-width: 47.99em) {
+      .viewer { width: 100%; height: 100%; max-height: none; margin: 0; border: 0; border-radius: 0; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .viewer { transition: opacity .25s, transform .35s var(--ease-out), overlay .35s allow-discrete, display .35s allow-discrete; }
+      .viewer:not([open]) { opacity: 0; transform: translateY(1.25rem) scale(.985); }
+      @starting-style { .viewer[open] { opacity: 0; transform: translateY(1.25rem) scale(.985); } }
+    }
+  </style>
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="14" height="14" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#work">Skip to work</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <picture>
+        <source type="image/avif" srcset="assets/img/brand/shader-jay-160.avif 160w, assets/img/brand/shader-jay-320.avif 320w, assets/img/brand/shader-jay-480.avif 480w" sizes="8rem">
+        <img src="assets/img/brand/shader-jay-320.webp" srcset="assets/img/brand/shader-jay-160.webp 160w, assets/img/brand/shader-jay-320.webp 320w, assets/img/brand/shader-jay-480.webp 480w" sizes="8rem" width="160" height="45" alt="Shader Jay, back to top">
+      </picture>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn theme-toggle" type="button" aria-label="Switch theme">
+      <svg class="icon icon-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <svg class="icon icon-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+    </button>
+    <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="top" aria-labelledby="hero-name">
+      <div class="hero__floor" aria-hidden="true"></div>
+      <div class="hero__content">
+        <h1 class="hero__name" id="hero-name">
+          <span class="hero__line">Jordan</span>
+          <span class="hero__line hero__line--last">Hinkson-Clarke <span class="hero__post">BSc, MA</span></span>
+        </h1>
+        <p class="hero__role">3D Designer &amp; Visualizer</p>
+        <p class="hero__intro">Based in London, I build 3D environments, products and game-ready assets in Blender.</p>
+        <div class="hero__actions">
+          <a class="btn btn--solid" href="#work">See the work</a>
+          <a class="btn" href="mailto:jhinksonclarke@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work__stage">
+        <div class="work__head">
+          <div class="work__titlebar">
+            <h2 class="work__title" id="work-title">Work</h2>
+            <div class="view-toggle" role="group" aria-label="Layout">
+              <button type="button" data-view="helix" aria-pressed="false">Spiral</button>
+              <button type="button" data-view="grid" aria-pressed="true">Grid</button>
+            </div>
+          </div>
+          <div class="filters" role="group" aria-label="Filter work by discipline"><!-- build:filters -->
+            <button class="filter" type="button" data-filter="all" aria-pressed="true"><span class="filter__label">All work</span> <span class="filter__count">20</span></button>
+            <button class="filter" type="button" data-filter="environment" aria-pressed="false"><span class="filter__label">Environment Art</span> <span class="filter__count">12</span></button>
+            <button class="filter" type="button" data-filter="hard-surface" aria-pressed="false"><span class="filter__label">Hard Surface Modelling</span> <span class="filter__count">1</span></button>
+            <button class="filter" type="button" data-filter="motion" aria-pressed="false"><span class="filter__label">Motion Loops</span> <span class="filter__count">3</span></button>
+            <button class="filter" type="button" data-filter="product" aria-pressed="false"><span class="filter__label">Product Placement</span> <span class="filter__count">4</span></button>
+          <!-- /build:filters --></div>
+          <p class="work__hint"><span class="hint-pointer">Scroll, drag or use the arrow keys to turn the spiral.</span><span class="hint-touch">Scroll or swipe sideways to turn the spiral.</span> Select the front piece to open it.</p>
+        </div>
+        <div class="helix">
+          <ol class="helix__track"><!-- build:cards -->
+          <li class="card" data-cat="environment" data-slug="ascension" style="--i: 0">
+            <span class="card__float">
+              <a class="card__link" href="#work/ascension" aria-labelledby="ascension-title ascension-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/ascension-card-320.avif 320w, assets/img/work/ascension-card-480.avif 480w, assets/img/work/ascension-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/ascension-card-640.webp" srcset="assets/img/work/ascension-card-320.webp 320w, assets/img/work/ascension-card-480.webp 480w, assets/img/work/ascension-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A golden figure floating in a shaft of light above a dark, flooded cavern hung with stalactites" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="ascension-title">Ascension</h3>
+              <p class="card__meta" id="ascension-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2025</span></p>
+              <p class="card__desc">A golden figure rises through a shaft of light in a flooded cavern, framed by hanging stalactites and teal-lit brickwork.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/ascension-800.avif 800w, assets/img/work/ascension-1400.avif 1400w, assets/img/work/ascension-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/ascension-2080.webp" srcset="assets/img/work/ascension-800.webp 800w, assets/img/work/ascension-1400.webp 1400w, assets/img/work/ascension-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A golden figure floating in a shaft of light above a dark, flooded cavern hung with stalactites" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="product" data-slug="terra" data-preview="assets/video/terra-soda-preview.mp4" style="--i: 1">
+            <span class="card__float">
+              <a class="card__link" href="#work/terra" aria-labelledby="terra-title terra-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/terra-card-320.avif 320w, assets/img/work/terra-card-480.avif 480w, assets/img/work/terra-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/terra-card-640.webp" srcset="assets/img/work/terra-card-320.webp 320w, assets/img/work/terra-card-480.webp 480w, assets/img/work/terra-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A lime soda can bursting through a splash of water, limes and leaves in a Spanish-language advert layout" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="terra-title">Terra</h3>
+              <p class="card__meta" id="terra-meta"><span class="card__cat">Product Placement</span>, <span class="card__year">2025</span></p>
+              <p class="card__desc">A lime soda visualised two ways: a Spanish-language poster, and a 10-second spot of splashes, condensation and a pull-tab close-up.</p>
+            </div>
+            <template class="card__media"><video class="viewer__video" data-label="Film" controls loop muted playsinline preload="metadata" poster="assets/img/work/terra-soda-poster.webp" width="1920" height="1080"><source src="assets/video/terra-soda.mp4" type="video/mp4"></video><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/terra-800.avif 800w, assets/img/work/terra-1254.avif 1254w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/terra-1254.webp" srcset="assets/img/work/terra-800.webp 800w, assets/img/work/terra-1254.webp 1254w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1254" height="1254" alt="A lime soda can bursting through a splash of water, limes and leaves in a Spanish-language advert layout" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="resonance" style="--i: 2">
+            <span class="card__float">
+              <a class="card__link" href="#work/resonance" aria-labelledby="resonance-title resonance-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/resonance-card-320.avif 320w, assets/img/work/resonance-card-480.avif 480w, assets/img/work/resonance-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/resonance-card-640.webp" srcset="assets/img/work/resonance-card-320.webp 320w, assets/img/work/resonance-card-480.webp 480w, assets/img/work/resonance-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A kneeling figure at the end of a tunnel of glowing magenta rings reflected in still water at blue hour" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="resonance-title">Resonance</h3>
+              <p class="card__meta" id="resonance-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2021</span></p>
+              <p class="card__desc">A kneeling figure at the end of a tunnel of glowing magenta rings, doubled in the still water of a blue-hour shoreline.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/resonance-800.avif 800w, assets/img/work/resonance-1400.avif 1400w, assets/img/work/resonance-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/resonance-2080.webp" srcset="assets/img/work/resonance-800.webp 800w, assets/img/work/resonance-1400.webp 1400w, assets/img/work/resonance-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A kneeling figure at the end of a tunnel of glowing magenta rings reflected in still water at blue hour" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="motion" data-slug="pendulum" data-preview="assets/video/pendulum-preview.mp4" style="--i: 3">
+            <span class="card__float">
+              <a class="card__link" href="#work/pendulum" aria-labelledby="pendulum-title pendulum-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/pendulum-card-320.avif 320w, assets/img/work/pendulum-card-480.avif 480w, assets/img/work/pendulum-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/pendulum-card-640.webp" srcset="assets/img/work/pendulum-card-320.webp 320w, assets/img/work/pendulum-card-480.webp 480w, assets/img/work/pendulum-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="Rows of glowing pink and amber orbs swinging on long strings against a dark background" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="pendulum-title">Pendulum</h3>
+              <p class="card__meta" id="pendulum-meta"><span class="card__cat">Motion Loops</span>, <span class="card__year">2021</span></p>
+              <p class="card__desc">A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle.</p>
+            </div>
+            <template class="card__media"><video class="viewer__video" data-label="Film" controls loop muted playsinline preload="metadata" poster="assets/img/work/pendulum-poster.webp" width="1024" height="1024"><source src="assets/video/pendulum.mp4" type="video/mp4"></video></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="the-last-memory" style="--i: 4">
+            <span class="card__float">
+              <a class="card__link" href="#work/the-last-memory" aria-labelledby="the-last-memory-title the-last-memory-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/the-last-memory-card-320.avif 320w, assets/img/work/the-last-memory-card-480.avif 480w, assets/img/work/the-last-memory-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/the-last-memory-card-640.webp" srcset="assets/img/work/the-last-memory-card-320.webp 320w, assets/img/work/the-last-memory-card-480.webp 480w, assets/img/work/the-last-memory-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="Two figures sitting face to face in a dark, overgrown temple courtyard with a small glowing bloom in the doorway" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="the-last-memory-title">The Last Memory</h3>
+              <p class="card__meta" id="the-last-memory-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2026</span></p>
+              <p class="card__desc">Two figures sit facing each other in a dark, overgrown temple courtyard, lit only by a small bioluminescent bloom in the doorway.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/the-last-memory-800.avif 800w, assets/img/work/the-last-memory-1400.avif 1400w, assets/img/work/the-last-memory-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/the-last-memory-2080.webp" srcset="assets/img/work/the-last-memory-800.webp 800w, assets/img/work/the-last-memory-1400.webp 1400w, assets/img/work/the-last-memory-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="Two figures sitting face to face in a dark, overgrown temple courtyard with a small glowing bloom in the doorway" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="product" data-slug="zest-and-zing" data-preview="assets/video/zest-zing-preview.mp4" style="--i: 5">
+            <span class="card__float">
+              <a class="card__link" href="#work/zest-and-zing" aria-labelledby="zest-and-zing-title zest-and-zing-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/zest-and-zing-card-320.avif 320w, assets/img/work/zest-and-zing-card-480.avif 480w, assets/img/work/zest-and-zing-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/zest-and-zing-card-640.webp" srcset="assets/img/work/zest-and-zing-card-320.webp 320w, assets/img/work/zest-and-zing-card-480.webp 480w, assets/img/work/zest-and-zing-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="Two blood-orange soda cans surrounded by lightning, splashes and orange slices in a bold advert layout" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="zest-and-zing-title">Zest &amp; Zing</h3>
+              <p class="card__meta" id="zest-and-zing-meta"><span class="card__cat">Product Placement</span>, <span class="card__year">2024–25</span></p>
+              <p class="card__desc">A blood-orange soda in two parts: a 2024 poster of crackling lightning and splashes, and a 2025 spot of pours and pull-tab close-ups.</p>
+            </div>
+            <template class="card__media"><video class="viewer__video" data-label="Film" controls loop muted playsinline preload="metadata" poster="assets/img/work/zest-zing-poster.webp" width="1920" height="1080"><source src="assets/video/zest-zing.mp4" type="video/mp4"></video><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/zest-and-zing-800.avif 800w, assets/img/work/zest-and-zing-1254.avif 1254w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/zest-and-zing-1254.webp" srcset="assets/img/work/zest-and-zing-800.webp 800w, assets/img/work/zest-and-zing-1254.webp 1254w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1254" height="1254" alt="Two blood-orange soda cans surrounded by lightning, splashes and orange slices in a bold advert layout" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="fractured-world" style="--i: 6">
+            <span class="card__float">
+              <a class="card__link" href="#work/fractured-world" aria-labelledby="fractured-world-title fractured-world-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/fractured-world-card-320.avif 320w, assets/img/work/fractured-world-card-480.avif 480w, assets/img/work/fractured-world-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/fractured-world-card-640.webp" srcset="assets/img/work/fractured-world-card-320.webp 320w, assets/img/work/fractured-world-card-480.webp 480w, assets/img/work/fractured-world-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A giant figure traced in electric-blue light rising from a rocky surface in space, holding a small planet" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="fractured-world-title">Fractured World</h3>
+              <p class="card__meta" id="fractured-world-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">A giant figure traced in electric-blue light rises from a rocky surface into open space, holding a small planet in one hand.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/fractured-world-800.avif 800w, assets/img/work/fractured-world-1400.avif 1400w, assets/img/work/fractured-world-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/fractured-world-2080.webp" srcset="assets/img/work/fractured-world-800.webp 800w, assets/img/work/fractured-world-1400.webp 1400w, assets/img/work/fractured-world-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A giant figure traced in electric-blue light rising from a rocky surface in space, holding a small planet" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="hard-surface" data-slug="fruits-and-juice" style="--i: 7">
+            <span class="card__float">
+              <a class="card__link" href="#work/fruits-and-juice" aria-labelledby="fruits-and-juice-title fruits-and-juice-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/fruits-and-juice-card-320.avif 320w, assets/img/work/fruits-and-juice-card-480.avif 480w, assets/img/work/fruits-and-juice-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/fruits-and-juice-card-640.webp" srcset="assets/img/work/fruits-and-juice-card-320.webp 320w, assets/img/work/fruits-and-juice-card-480.webp 480w, assets/img/work/fruits-and-juice-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A glass of juice with ice cubes and a straw between an apple and an orange under soft pink light" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="fruits-and-juice-title">Fruits &amp; Juice</h3>
+              <p class="card__meta" id="fruits-and-juice-meta"><span class="card__cat">Hard Surface Modelling</span>, <span class="card__year">2019</span></p>
+              <p class="card__desc">A study in glass, ice and liquid: a glass of juice with ice and a straw, set between an apple and an orange under soft pink light.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/fruits-and-juice-800.avif 800w, assets/img/work/fruits-and-juice-1080.avif 1080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/fruits-and-juice-1080.webp" srcset="assets/img/work/fruits-and-juice-800.webp 800w, assets/img/work/fruits-and-juice-1080.webp 1080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1080" height="1080" alt="A glass of juice with ice cubes and a straw between an apple and an orange under soft pink light" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="genesis" style="--i: 8">
+            <span class="card__float">
+              <a class="card__link" href="#work/genesis" aria-labelledby="genesis-title genesis-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/genesis-card-320.avif 320w, assets/img/work/genesis-card-480.avif 480w, assets/img/work/genesis-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/genesis-card-640.webp" srcset="assets/img/work/genesis-card-320.webp 320w, assets/img/work/genesis-card-480.webp 480w, assets/img/work/genesis-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A crouching figure in a flooded colonnade facing a blazing golden disc where two hands cradle an egg" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="genesis-title">Genesis</h3>
+              <p class="card__meta" id="genesis-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2021</span></p>
+              <p class="card__desc">A figure crouches in a flooded colonnade before a blazing golden disc, where two hands cradle an egg.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/genesis-800.avif 800w, assets/img/work/genesis-1400.avif 1400w, assets/img/work/genesis-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/genesis-2080.webp" srcset="assets/img/work/genesis-800.webp 800w, assets/img/work/genesis-1400.webp 1400w, assets/img/work/genesis-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A crouching figure in a flooded colonnade facing a blazing golden disc where two hands cradle an egg" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="motion" data-slug="crawling" data-preview="assets/video/crawling-preview.mp4" style="--i: 9">
+            <span class="card__float">
+              <a class="card__link" href="#work/crawling" aria-labelledby="crawling-title crawling-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/crawling-card-320.avif 320w, assets/img/work/crawling-card-480.avif 480w, assets/img/work/crawling-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/crawling-card-640.webp" srcset="assets/img/work/crawling-card-320.webp 320w, assets/img/work/crawling-card-480.webp 480w, assets/img/work/crawling-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A figure covered in rippling red and blue light crawling towards the camera across a dark floor" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="crawling-title">Crawling</h3>
+              <p class="card__meta" id="crawling-meta"><span class="card__cat">Motion Loops</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">A figure wrapped in rippling red and blue light crawls towards the camera across a dark, reflective floor.</p>
+            </div>
+            <template class="card__media"><video class="viewer__video" data-label="Film" controls loop muted playsinline preload="metadata" poster="assets/img/work/crawling-poster.webp" width="1080" height="1080"><source src="assets/video/crawling.mp4" type="video/mp4"></video></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="wanderers" style="--i: 10">
+            <span class="card__float">
+              <a class="card__link" href="#work/wanderers" aria-labelledby="wanderers-title wanderers-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/wanderers-card-320.avif 320w, assets/img/work/wanderers-card-480.avif 480w, assets/img/work/wanderers-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/wanderers-card-640.webp" srcset="assets/img/work/wanderers-card-320.webp 320w, assets/img/work/wanderers-card-480.webp 480w, assets/img/work/wanderers-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="Two pale figures walking over golden sand dunes under a low sun, casting long shadows" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="wanderers-title">Wanderers</h3>
+              <p class="card__meta" id="wanderers-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2026</span></p>
+              <p class="card__desc">Two pale figures cross golden dunes under a low sun, their shadows stretching long across the sand.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/wanderers-800.avif 800w, assets/img/work/wanderers-1400.avif 1400w, assets/img/work/wanderers-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/wanderers-2080.webp" srcset="assets/img/work/wanderers-800.webp 800w, assets/img/work/wanderers-1400.webp 1400w, assets/img/work/wanderers-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="Two pale figures walking over golden sand dunes under a low sun, casting long shadows" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="product" data-slug="silk-lotus" style="--i: 11">
+            <span class="card__float">
+              <a class="card__link" href="#work/silk-lotus" aria-labelledby="silk-lotus-title silk-lotus-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/silk-lotus-card-320.avif 320w, assets/img/work/silk-lotus-card-480.avif 480w, assets/img/work/silk-lotus-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/silk-lotus-card-640.webp" srcset="assets/img/work/silk-lotus-card-320.webp 320w, assets/img/work/silk-lotus-card-480.webp 480w, assets/img/work/silk-lotus-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A face serum dropper bottle on pink water among lotus flowers in a Chinese and English beauty advert" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="silk-lotus-title">Silk Lotus</h3>
+              <p class="card__meta" id="silk-lotus-meta"><span class="card__cat">Product Placement</span>, <span class="card__year">2026</span></p>
+              <p class="card__desc">A face serum staged on still pink water among lotus flowers, laid out as a bilingual Chinese and English beauty advert.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/silk-lotus-800.avif 800w, assets/img/work/silk-lotus-1024.avif 1024w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/silk-lotus-1024.webp" srcset="assets/img/work/silk-lotus-800.webp 800w, assets/img/work/silk-lotus-1024.webp 1024w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1024" height="1536" alt="A face serum dropper bottle on pink water among lotus flowers in a Chinese and English beauty advert" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="temple-of-mind" style="--i: 12">
+            <span class="card__float">
+              <a class="card__link" href="#work/temple-of-mind" aria-labelledby="temple-of-mind-title temple-of-mind-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/temple-of-mind-card-320.avif 320w, assets/img/work/temple-of-mind-card-480.avif 480w, assets/img/work/temple-of-mind-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/temple-of-mind-card-640.webp" srcset="assets/img/work/temple-of-mind-card-320.webp 320w, assets/img/work/temple-of-mind-card-480.webp 480w, assets/img/work/temple-of-mind-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A seated figure on a circular platform above the clouds with a red arched bridge rising to a torii gate" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="temple-of-mind-title">Temple of Mind</h3>
+              <p class="card__meta" id="temple-of-mind-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">A lone figure rests on a circular platform above the clouds, where a red arched bridge climbs to a torii gate.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/temple-of-mind-800.avif 800w, assets/img/work/temple-of-mind-1400.avif 1400w, assets/img/work/temple-of-mind-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/temple-of-mind-2080.webp" srcset="assets/img/work/temple-of-mind-800.webp 800w, assets/img/work/temple-of-mind-1400.webp 1400w, assets/img/work/temple-of-mind-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A seated figure on a circular platform above the clouds with a red arched bridge rising to a torii gate" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="motion" data-slug="water-pillar" data-preview="assets/video/water-pillar-preview.mp4" style="--i: 13">
+            <span class="card__float">
+              <a class="card__link" href="#work/water-pillar" aria-labelledby="water-pillar-title water-pillar-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/water-pillar-card-320.avif 320w, assets/img/work/water-pillar-card-480.avif 480w, assets/img/work/water-pillar-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/water-pillar-card-640.webp" srcset="assets/img/work/water-pillar-card-320.webp 320w, assets/img/work/water-pillar-card-480.webp 480w, assets/img/work/water-pillar-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A spiralling column of blue water twisting upwards against a pale sky" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="water-pillar-title">Water Pillar</h3>
+              <p class="card__meta" id="water-pillar-meta"><span class="card__cat">Motion Loops</span>, <span class="card__year">2019</span></p>
+              <p class="card__desc">A column of water spirals up from the ground and twists into shape against a pale sky, then fades out to restart the loop.</p>
+            </div>
+            <template class="card__media"><video class="viewer__video" data-label="Film" controls loop muted playsinline preload="metadata" poster="assets/img/work/water-pillar-poster.webp" width="1024" height="1024"><source src="assets/video/water-pillar.mp4" type="video/mp4"></video></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="limbo" style="--i: 14">
+            <span class="card__float">
+              <a class="card__link" href="#work/limbo" aria-labelledby="limbo-title limbo-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/limbo-card-320.avif 320w, assets/img/work/limbo-card-480.avif 480w, assets/img/work/limbo-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/limbo-card-640.webp" srcset="assets/img/work/limbo-card-320.webp 320w, assets/img/work/limbo-card-480.webp 480w, assets/img/work/limbo-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A figure draped in a white sheet standing on still water while bodies hang limp in the misty air" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="limbo-title">Limbo</h3>
+              <p class="card__meta" id="limbo-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2021</span></p>
+              <p class="card__desc">A draped, faceless figure stands on mirror-still water while bodies hang motionless in the misty air around it.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/limbo-800.avif 800w, assets/img/work/limbo-1400.avif 1400w, assets/img/work/limbo-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/limbo-2080.webp" srcset="assets/img/work/limbo-800.webp 800w, assets/img/work/limbo-1400.webp 1400w, assets/img/work/limbo-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A figure draped in a white sheet standing on still water while bodies hang limp in the misty air" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="product" data-slug="citrus-crown" style="--i: 15">
+            <span class="card__float">
+              <a class="card__link" href="#work/citrus-crown" aria-labelledby="citrus-crown-title citrus-crown-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/citrus-crown-card-320.avif 320w, assets/img/work/citrus-crown-card-480.avif 480w, assets/img/work/citrus-crown-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/citrus-crown-card-640.webp" srcset="assets/img/work/citrus-crown-card-320.webp 320w, assets/img/work/citrus-crown-card-480.webp 480w, assets/img/work/citrus-crown-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="An orange juice bottle on wet rock among sliced oranges and palm leaves in a French-language advert" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="citrus-crown-title">Citrus Crown</h3>
+              <p class="card__meta" id="citrus-crown-meta"><span class="card__cat">Product Placement</span>, <span class="card__year">2025</span></p>
+              <p class="card__desc">A premium orange juice bottle on wet rock among sliced oranges and palm leaves, laid out as a French-language summer advert.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/citrus-crown-800.avif 800w, assets/img/work/citrus-crown-1254.avif 1254w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/citrus-crown-1254.webp" srcset="assets/img/work/citrus-crown-800.webp 800w, assets/img/work/citrus-crown-1254.webp 1254w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1254" height="1254" alt="An orange juice bottle on wet rock among sliced oranges and palm leaves in a French-language advert" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="departure" style="--i: 16">
+            <span class="card__float">
+              <a class="card__link" href="#work/departure" aria-labelledby="departure-title departure-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/departure-card-320.avif 320w, assets/img/work/departure-card-480.avif 480w, assets/img/work/departure-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/departure-card-640.webp" srcset="assets/img/work/departure-card-320.webp 320w, assets/img/work/departure-card-480.webp 480w, assets/img/work/departure-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A small boat on calm water between two wooded islands at sunset, with birds in the sky" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="departure-title">Departure</h3>
+              <p class="card__meta" id="departure-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">A small boat waits between two wooded islands as the sun sets over calm water.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/departure-800.avif 800w, assets/img/work/departure-1400.avif 1400w, assets/img/work/departure-2080.avif 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/departure-2080.webp" srcset="assets/img/work/departure-800.webp 800w, assets/img/work/departure-1400.webp 1400w, assets/img/work/departure-2080.webp 2080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="2080" height="2080" alt="A small boat on calm water between two wooded islands at sunset, with birds in the sky" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="snowbound" style="--i: 17">
+            <span class="card__float">
+              <a class="card__link" href="#work/snowbound" aria-labelledby="snowbound-title snowbound-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/snowbound-card-320.avif 320w, assets/img/work/snowbound-card-480.avif 480w, assets/img/work/snowbound-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/snowbound-card-640.webp" srcset="assets/img/work/snowbound-card-320.webp 320w, assets/img/work/snowbound-card-480.webp 480w, assets/img/work/snowbound-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A lone figure meditating in rolling snow during snowfall, with a distant stone tower" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="snowbound-title">Snowbound</h3>
+              <p class="card__meta" id="snowbound-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">A lone figure meditates in a field of drifting snow, a distant stone tower just visible through the haze.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/snowbound-800.avif 800w, assets/img/work/snowbound-1080.avif 1080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/snowbound-1080.webp" srcset="assets/img/work/snowbound-800.webp 800w, assets/img/work/snowbound-1080.webp 1080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1080" height="1080" alt="A lone figure meditating in rolling snow during snowfall, with a distant stone tower" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="canopy" style="--i: 18">
+            <span class="card__float">
+              <a class="card__link" href="#work/canopy" aria-labelledby="canopy-title canopy-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/canopy-card-320.avif 320w, assets/img/work/canopy-card-480.avif 480w, assets/img/work/canopy-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/canopy-card-640.webp" srcset="assets/img/work/canopy-card-320.webp 320w, assets/img/work/canopy-card-480.webp 480w, assets/img/work/canopy-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="An aerial view of dense green forest broken by pale rock outcrops, with birds in a bright sky" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="canopy-title">Canopy</h3>
+              <p class="card__meta" id="canopy-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">An aerial view over a dense forest canopy broken by pale rock outcrops, with birds circling in a bright sky.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/canopy-800.avif 800w, assets/img/work/canopy-1080.avif 1080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/canopy-1080.webp" srcset="assets/img/work/canopy-800.webp 800w, assets/img/work/canopy-1080.webp 1080w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1080" height="1080" alt="An aerial view of dense green forest broken by pale rock outcrops, with birds in a bright sky" decoding="async"></picture></template>
+          </li>
+          <li class="card" data-cat="environment" data-slug="a-frame-house" style="--i: 19">
+            <span class="card__float">
+              <a class="card__link" href="#work/a-frame-house" aria-labelledby="a-frame-house-title a-frame-house-meta" draggable="false">
+                <picture>
+                  <source type="image/avif" srcset="assets/img/work/a-frame-house-card-320.avif 320w, assets/img/work/a-frame-house-card-480.avif 480w, assets/img/work/a-frame-house-card-640.avif 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw">
+                  <img src="assets/img/work/a-frame-house-card-640.webp" srcset="assets/img/work/a-frame-house-card-320.webp 320w, assets/img/work/a-frame-house-card-480.webp 480w, assets/img/work/a-frame-house-card-640.webp 640w" sizes="(min-width: 64em) min(22vw, 340px), 58vw" width="640" height="640" alt="A black A-frame cabin in deep snow surrounded by pine trees in low winter sun" loading="lazy" decoding="async" draggable="false">
+                </picture>
+              </a>
+            </span>
+            <div class="card__info">
+              <h3 class="card__title" id="a-frame-house-title">A-Frame House</h3>
+              <p class="card__meta" id="a-frame-house-meta"><span class="card__cat">Environment Art</span>, <span class="card__year">2022</span></p>
+              <p class="card__desc">A black A-frame cabin half-buried in snow among pine trees, caught in low winter sunlight.</p>
+            </div>
+            <template class="card__media"><picture data-label="Still"><source type="image/avif" srcset="assets/img/work/a-frame-house-800.avif 800w, assets/img/work/a-frame-house-1400.avif 1400w, assets/img/work/a-frame-house-1920.avif 1920w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw"><img src="assets/img/work/a-frame-house-1920.webp" srcset="assets/img/work/a-frame-house-800.webp 800w, assets/img/work/a-frame-house-1400.webp 1400w, assets/img/work/a-frame-house-1920.webp 1920w" sizes="(min-width: 64em) calc(100vw - 28rem), 100vw" width="1920" height="1080" alt="A black A-frame cabin in deep snow surrounded by pine trees in low winter sun" decoding="async"></picture></template>
+          </li>
+        <!-- /build:cards --></ol>
+        </div>
+        <div class="work__caption">
+          <div class="caption__inner" aria-hidden="true">
+            <p class="caption__meta"></p>
+            <p class="caption__title"></p>
+            <p class="caption__desc"></p>
+            <a class="btn caption__open" href="#work" tabindex="-1">Open project</a>
+          </div>
+        </div>
+        <div class="work__controls">
+          <button class="icon-btn" type="button" data-step="-1" aria-label="Previous piece"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+          <span class="work__count" aria-hidden="true"></span>
+          <button class="icon-btn" type="button" data-step="1" aria-label="Next piece"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </div>
+        <p class="sr-only" id="work-status" aria-live="polite"></p>
+      </div>
+      <div class="work__steps" aria-hidden="true"></div>
+    </section>
+
+    <section class="plane brands" id="brands" aria-labelledby="brands-title">
+      <div class="container">
+        <h2 class="section-title" id="brands-title">Brands I’ve worked with</h2>
+        <p class="brands__lede">Music videos, advertising, digital applications and product visualisation, working alongside producers, designers and animation teams.</p>
+        <ul class="brands__grid"><!-- build:brands -->
+            <li class="brand-item brand-item--0207-def-jam"><img src="assets/img/brands/0207-def-jam.png" width="369" height="160" alt="0207 Def Jam Recordings" loading="lazy" decoding="async"></li>
+            <li class="brand-item brand-item--word"><span class="brand-word">Olympics</span></li>
+            <li class="brand-item brand-item--vfb-stuttgart"><img src="assets/img/brands/vfb-stuttgart.png" width="144" height="160" alt="VfB Stuttgart" loading="lazy" decoding="async"></li>
+            <li class="brand-item brand-item--universal-music-group"><img src="assets/img/brands/universal-music-group.png" width="424" height="160" alt="Universal Music Group" loading="lazy" decoding="async"></li>
+            <li class="brand-item brand-item--metamerch"><img src="assets/img/brands/metamerch.png" width="939" height="160" alt="MetaMerch.io" loading="lazy" decoding="async"></li>
+            <li class="brand-item brand-item--io-interactive"><img src="assets/img/brands/io-interactive.png" width="289" height="160" alt="IO Interactive" loading="lazy" decoding="async"></li>
+          <!-- /build:brands --></ul>
+      </div>
+    </section>
+
+    <section class="plane story" id="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div>
+          <h2 class="section-title" id="story-title">Building the worlds I grew up watching</h2>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>London</dd></div>
+            <div><dt>Studied</dt><dd>BSc and MA in Computer Animation</dd></div>
+            <div><dt>Works in</dt><dd>Blender</dd></div>
+            <div><dt>Also</dt><dd>Mentors junior artists and builds team workflows</dd></div>
+          </dl>
+        </div>
+        <div class="story__text">
+          <p class="story__lede">Hi, I’m Jordan — a London-based 3D Designer who grew up with two big sources of inspiration: gaming and anime. What started as simply being fascinated by the worlds and characters I saw on screen eventually turned into a passion for creating those worlds myself.</p>
+          <p>Today, I specialise in 3D environments, products, and game-ready assets using Blender. With a BSc and MA in Computer Animation, I’ve developed a balance between technical precision and creative storytelling, allowing me to turn ideas into detailed, immersive visuals.</p>
+          <p>Over the years, I’ve worked across music videos, advertising, digital applications, and product visualisation, collaborating with producers, designers, and animation teams to bring concepts from an initial idea to a finished piece. I’ve also had the opportunity to mentor junior artists and help develop workflows that make the creative process more efficient.</p>
+          <p>For me, 3D is about more than just modelling. It’s about taking an idea that exists only in someone’s imagination and giving it form, atmosphere, and personality.</p>
+          <p class="story__close">I create things I would have loved to see growing up — and that’s what keeps me creating.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="plane contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title" id="contact-title">Got an idea that only exists in your head?</h2>
+        <p class="contact__lede">Let’s give it form, atmosphere and personality.</p>
+        <a class="contact__email" href="mailto:jhinksonclarke@gmail.com">jhinksonclarke@gmail.com</a>
+        <div class="contact__row">
+          <button class="btn copy-btn" type="button" data-copy="jhinksonclarke@gmail.com">
+            <svg class="icon icon-copy" aria-hidden="true"><use href="#i-copy"/></svg>
+            <svg class="icon icon-check" aria-hidden="true"><use href="#i-check"/></svg>
+            <span class="copy-btn__label">Copy email</span>
+          </button>
+          <ul class="contact__links">
+            <li><a href="https://www.linkedin.com/in/jordan-hinkson-clarke/" rel="me noopener" target="_blank"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn<span class="sr-only"> (opens in a new tab)</span></a></li>
+            <li><a href="https://www.instagram.com/shaderjay/" rel="me noopener" target="_blank"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>Instagram @shaderjay<span class="sr-only"> (opens in a new tab)</span></a></li>
+          </ul>
+        </div>
+        <p class="sr-only" id="copy-status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Jordan Hinkson-Clarke</p>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <dialog class="viewer" id="viewer" closedby="any" aria-labelledby="viewer-title">
+    <div class="viewer__inner">
+      <div class="viewer__media"></div>
+      <div class="viewer__body">
+        <p class="viewer__meta"></p>
+        <h2 class="viewer__title" id="viewer-title">Project</h2>
+        <p class="viewer__desc"></p>
+        <div class="viewer__tabs" role="group" aria-label="Media" hidden></div>
+        <div class="viewer__nav">
+          <button class="icon-btn" type="button" data-go="-1" aria-label="Previous project"><svg class="icon" aria-hidden="true"><use href="#i-left"/></svg></button>
+          <span class="viewer__count"></span>
+          <button class="icon-btn" type="button" data-go="1" aria-label="Next project"><svg class="icon" aria-hidden="true"><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+      <button class="icon-btn viewer__close" type="button" aria-label="Close" autofocus><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+  </dialog>
+</body>
+</html>

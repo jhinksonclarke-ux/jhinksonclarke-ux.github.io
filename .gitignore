@@ -1,0 +1,10 @@
+# Original renders and videos (~500 MB) stay local; the site ships the optimised copies in assets/.
+MEDIA/
+# Intermediate files from the tools (poster frames, source font).
+.work/
+node_modules/
+.claude/
+*.log
+Thumbs.db
+desktop.ini
+.DS_Store
