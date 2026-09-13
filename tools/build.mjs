@@ -10,7 +10,7 @@
 // Images are only re-encoded when the source is newer than the output.
 
 import sharp from 'sharp';
-import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, readdirSync, unlinkSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -27,6 +27,16 @@ Object.values(OUT).forEach((dir) => mkdirSync(dir, { recursive: true }));
 
 const { categories, projects } = JSON.parse(readFileSync(join(root, 'content', 'projects.json'), 'utf8'));
 
+// The spiral runs newest to oldest. A range such as "2024–25" counts by the year
+// it finished, and pieces from the same year keep the order they're listed in.
+function finishedYear({ slug, year }) {
+  const match = String(year).match(/^(\d{4})(?:\s*[–-]\s*(\d{2}|\d{4}))?$/);
+  if (!match) throw new Error(`Project ${slug} needs a year like "2025" or "2024–25", not "${year}"`);
+  const [, start, end] = match;
+  return Number(end ? start.slice(0, 4 - end.length) + end : start);
+}
+projects.sort((a, b) => finishedYear(b) - finishedYear(a));
+
 const CARD_WIDTHS = [320, 480, 640];
 const VIEW_WIDTHS = [800, 1400, 2080];
 const AVIF = { quality: 50, effort: 5 };
@@ -36,9 +46,14 @@ const isFresh = (out, src) => existsSync(out) && statSync(out).mtimeMs >= statSy
 const rel = (file) => file.slice(root.length + 1).replaceAll('\\', '/');
 const esc = (s) => String(s).replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 
+// Every work image this build writes or keeps; anything else in assets/img/work
+// belonged to a removed project and is deleted at the end.
+const produced = new Set();
+
 async function encode(src, base, resize) {
   const avif = `${base}.avif`;
   const webp = `${base}.webp`;
+  produced.add(avif).add(webp);
   if (!isFresh(avif, src)) await sharp(src).resize(resize).avif(AVIF).toFile(avif);
   if (!isFresh(webp, src)) await sharp(src).resize(resize).webp(WEBP).toFile(webp);
 }
@@ -62,6 +77,7 @@ async function buildWork(project) {
     const meta = await sharp(poster).metadata();
     const width = Math.min(meta.width, 1280);
     const posterOut = join(OUT.work, `${project.video}-poster.webp`);
+    produced.add(posterOut);
     if (!isFresh(posterOut, poster)) await sharp(poster).resize({ width }).webp(WEBP).toFile(posterOut);
     media.push({
       type: 'video', label: 'Film',
@@ -284,9 +300,12 @@ function filtersMarkup() {
   const count = (cat) => projects.filter((p) => p.category === cat).length;
   const chip = (value, label, n, pressed) =>
     `<button class="filter" type="button" data-filter="${value}" aria-pressed="${pressed}"><span class="filter__label">${esc(label)}</span> <span class="filter__count">${n}</span></button>`;
+  // A discipline with no pieces gets no chip, so no filter leads to an empty spiral.
   return [
     chip('all', 'All work', projects.length, true),
-    ...Object.entries(categories).map(([key, label]) => chip(key, label, count(key), false)),
+    ...Object.entries(categories)
+      .filter(([key]) => count(key) > 0)
+      .map(([key, label]) => chip(key, label, count(key), false)),
   ].map((c) => `\n            ${c}`).join('') + '\n          ';
 }
 
@@ -349,6 +368,10 @@ for (const [i, project] of projects.entries()) {
   process.stdout.write(`\rwork images ${i + 1}/${projects.length}`);
 }
 process.stdout.write('\n');
+
+const unused = readdirSync(OUT.work).filter((file) => !produced.has(join(OUT.work, file)));
+for (const file of unused) unlinkSync(join(OUT.work, file));
+if (unused.length) console.log(`removed ${unused.length} images from removed projects`);
 
 const indexPath = join(root, 'index.html');
 let html = readFileSync(indexPath, 'utf8');

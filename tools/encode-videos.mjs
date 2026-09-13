@@ -35,14 +35,6 @@ const clips = [
     src: 'MotionLoop_Water_Pillar_2019.mov', slug: 'water-pillar', size: 1024, fps: 25, crf: 23,
     preview: { start: 0, duration: 10 }, poster: 8,
   },
-  {
-    src: 'Product_Placement_Advert_Video_Terra_SodaCan_2025.mp4', slug: 'terra-soda', width: 1920, fps: 24, crf: 24,
-    preview: { start: 0, duration: 10 }, poster: 3.4,
-  },
-  {
-    src: 'Product_Placement_Advert_Video_Z&Z_SodaCan_2025.mp4', slug: 'zest-zing', width: 1920, fps: 24, crf: 24,
-    preview: { start: 0, duration: 10 }, poster: 3.4,
-  },
 ];
 
 const H264 = ['-c:v', 'libx264', '-preset', 'slow', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-movflags', '+faststart'];

@@ -5,8 +5,7 @@
   "description": "One-page portfolio for Jordan Hinkson-Clarke, 3D Designer & Visualizer (Shader Jay).",
   "type": "module",
   "scripts": {
-    "media": "node tools/encode-videos.mjs && node tools/optimize-images.mjs",
-    "images": "node tools/optimize-images.mjs",
+    "build": "node tools/build.mjs",
     "serve": "serve -l 5173 ."
   },
   "devDependencies": {
