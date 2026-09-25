@@ -28,12 +28,36 @@ const clips = [
     preview: { start: 34, duration: 8, crossfade: 1 }, poster: 36,
   },
   {
-    src: 'Motionloop_Crawling_2022.mp4', slug: 'crawling', size: 1080, fps: 30, crf: 24,
-    preview: { start: 0, duration: 8.8 }, poster: 6.5,
+    src: 'Hard_Surface_Modeling_ioi_award_design_yr_1_Turntable_2023.mp4', slug: 'ioi-award-1', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
   },
   {
-    src: 'MotionLoop_Water_Pillar_2019.mov', slug: 'water-pillar', size: 1024, fps: 25, crf: 23,
-    preview: { start: 0, duration: 10 }, poster: 8,
+    src: 'Hard_Surface_Modeling_ioi_award_design_yr_5_Turntable_2023.mp4', slug: 'ioi-award-5', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
+  },
+  {
+    src: 'Hard_Surface_Modeling_ioi_award_design_10_Turntable_2023.mp4', slug: 'ioi-award-10', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
+  },
+  {
+    src: 'Hard_Surface_Modeling_ioi_award_design_yr_15_Turntable_2023.mp4', slug: 'ioi-award-15', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
+  },
+  {
+    src: 'Hard_Surface_Modeling_ioi_award_design_20_Turntable_2023.mp4', slug: 'ioi-award-20', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
+  },
+  {
+    src: 'Hard_Surface_Modeling_MK1_Promotional_Medalion_WB_2023.mp4', slug: 'mk1-medallion', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1.5,
+  },
+  {
+    src: 'Product_Placement_Advert_Terra_SodaCan_Turntable_2025.mp4', slug: 'terra-turntable', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
+  },
+  {
+    src: 'Product_Placement_Advert_Z&Z_SodaCan_Turntable_2025.mp4', slug: 'zest-zing-turntable', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 1,
   },
 ];
 

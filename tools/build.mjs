@@ -60,40 +60,54 @@ async function encode(src, base, resize) {
 
 // ---------------------------------------------------------------- work images
 
+// `media` lists what the viewer shows, in order: `{ image }` for a still in
+// MEDIA/, `{ video }` for an encoded film, each with an optional label and alt.
+// `cover` is the still used for the spiral card; without one the card comes from
+// the first film's poster frame. With no `media`, the cover is the only still.
+const slugify = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
 async function buildWork(project) {
-  const still = project.image ? join(MEDIA, project.image) : null;
-  const poster = project.video ? join(POSTERS, `${project.video}.png`) : null;
-  const cardSource = still || poster;
-  if (!existsSync(cardSource)) throw new Error(`Missing source for ${project.slug}: ${cardSource}`);
+  const items = project.media ?? [{ image: project.cover }];
+  const firstFilm = items.find((item) => item.video);
+  const cover = project.cover ? join(MEDIA, project.cover) : join(POSTERS, `${firstFilm?.video}.png`);
+  if (!existsSync(cover)) throw new Error(`Missing cover for ${project.slug}: ${cover}`);
 
   for (const w of CARD_WIDTHS) {
-    await encode(cardSource, join(OUT.work, `${project.slug}-card-${w}`), {
+    await encode(cover, join(OUT.work, `${project.slug}-card-${w}`), {
       width: w, height: w, fit: 'cover', position: project.cardPosition || 'centre',
     });
   }
 
+  const stills = items.filter((item) => item.image).length;
   const media = [];
-  if (project.video) {
-    const meta = await sharp(poster).metadata();
-    const width = Math.min(meta.width, 1280);
-    const posterOut = join(OUT.work, `${project.video}-poster.webp`);
-    produced.add(posterOut);
-    if (!isFresh(posterOut, poster)) await sharp(poster).resize({ width }).webp(WEBP).toFile(posterOut);
-    media.push({
-      type: 'video', label: 'Film',
-      src: `assets/video/${project.video}.mp4`, poster: rel(posterOut),
-      width: meta.width, height: meta.height,
-    });
-  }
-  if (still) {
-    const meta = await sharp(still).metadata();
-    const widths = [...new Set([...VIEW_WIDTHS.filter((w) => w < meta.width), Math.min(meta.width, 2080)])];
-    for (const w of widths) await encode(still, join(OUT.work, `${project.slug}-${w}`), { width: w });
-    const largest = widths.at(-1);
-    media.push({
-      type: 'image', label: 'Still', widths,
-      width: largest, height: Math.round((meta.height * largest) / meta.width),
-    });
+  for (const item of items) {
+    if (item.video) {
+      const poster = join(POSTERS, `${item.video}.png`);
+      if (!existsSync(poster)) throw new Error(`No poster for ${item.video}: run tools/encode-videos.mjs first`);
+      const meta = await sharp(poster).metadata();
+      const posterOut = join(OUT.work, `${item.video}-poster.webp`);
+      produced.add(posterOut);
+      if (!isFresh(posterOut, poster)) {
+        await sharp(poster).resize({ width: Math.min(meta.width, 1280) }).webp(WEBP).toFile(posterOut);
+      }
+      media.push({
+        type: 'video', label: item.label || 'Film', alt: item.alt || project.alt, slug: item.video,
+        src: `assets/video/${item.video}.mp4`, poster: rel(posterOut),
+        width: meta.width, height: meta.height,
+      });
+    } else {
+      const still = join(MEDIA, item.image);
+      if (!existsSync(still)) throw new Error(`Missing still for ${project.slug}: ${still}`);
+      const meta = await sharp(still).metadata();
+      const widths = [...new Set([...VIEW_WIDTHS.filter((w) => w < meta.width), Math.min(meta.width, 2080)])];
+      const base = stills > 1 && item.label ? `${project.slug}-${slugify(item.label)}` : project.slug;
+      for (const w of widths) await encode(still, join(OUT.work, `${base}-${w}`), { width: w });
+      const largest = widths.at(-1);
+      media.push({
+        type: 'image', label: item.label || 'Still', alt: item.alt || project.alt, base, widths,
+        width: largest, height: Math.round((meta.height * largest) / meta.width),
+      });
+    }
   }
   return media;
 }
@@ -136,6 +150,7 @@ async function buildBrandLogos() {
     { slug: 'universal-music-group', file: 'Worked_with_logo_Universal_Music_Group.png', coverage: (r, g, b, a) => a },
     { slug: 'metamerch', file: 'Worked_with_logo_MetaMerch.png', coverage: (r, g, b, a) => a },
     { slug: 'io-interactive', file: 'Worked_with_logo_io-interactive.png', coverage: (r, g, b, a) => a },
+    { slug: 'warner-bros', file: 'Worked_with_logo_Warner Bros.png', coverage: (r, g, b, a) => a },
   ];
   const result = {};
   for (const logo of logos) {
@@ -267,14 +282,15 @@ const VIEW_SIZES = '(min-width: 64em) calc(100vw - 28rem), 100vw';
 function cardMarkup(project, media, index) {
   const { slug, title, category, year } = project;
   const set = (ext) => CARD_WIDTHS.map((w) => `assets/img/work/${slug}-card-${w}.${ext} ${w}w`).join(', ');
-  const preview = project.video ? ` data-preview="assets/video/${project.video}-preview.mp4"` : '';
+  const film = media.find((m) => m.type === 'video');
+  const preview = film ? ` data-preview="assets/video/${film.slug}-preview.mp4"` : '';
 
   const viewer = media.map((m) => {
     if (m.type === 'video') {
-      return `<video class="viewer__video" data-label="${m.label}" controls loop muted playsinline preload="metadata" poster="${m.poster}" width="${m.width}" height="${m.height}"><source src="${m.src}" type="video/mp4"></video>`;
+      return `<video class="viewer__video" data-label="${esc(m.label)}" controls loop muted playsinline preload="metadata" poster="${m.poster}" width="${m.width}" height="${m.height}"><source src="${m.src}" type="video/mp4"></video>`;
     }
-    const s = (ext) => m.widths.map((w) => `assets/img/work/${slug}-${w}.${ext} ${w}w`).join(', ');
-    return `<picture data-label="${m.label}"><source type="image/avif" srcset="${s('avif')}" sizes="${VIEW_SIZES}"><img src="assets/img/work/${slug}-${m.widths.at(-1)}.webp" srcset="${s('webp')}" sizes="${VIEW_SIZES}" width="${m.width}" height="${m.height}" alt="${esc(project.alt)}" decoding="async"></picture>`;
+    const s = (ext) => m.widths.map((w) => `assets/img/work/${m.base}-${w}.${ext} ${w}w`).join(', ');
+    return `<picture data-label="${esc(m.label)}"><source type="image/avif" srcset="${s('avif')}" sizes="${VIEW_SIZES}"><img src="assets/img/work/${m.base}-${m.widths.at(-1)}.webp" srcset="${s('webp')}" sizes="${VIEW_SIZES}" width="${m.width}" height="${m.height}" alt="${esc(m.alt)}" decoding="async"></picture>`;
   }).join('');
 
   return `
@@ -319,6 +335,7 @@ function brandsMarkup(logos) {
     { logo: 'universal-music-group', name: 'Universal Music Group' },
     { logo: 'metamerch', name: 'MetaMerch.io' },
     { logo: 'io-interactive', name: 'IO Interactive' },
+    { logo: 'warner-bros', name: 'Warner Bros' },
   ];
   return brands.map((b) => {
     if (b.word) return `\n            <li class="brand-item brand-item--word"><span class="brand-word">${b.word}</span></li>`;

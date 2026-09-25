@@ -11,7 +11,7 @@
       "title": "The Last Memory",
       "category": "environment",
       "year": "2026",
-      "image": "environments_art_The_Last_Memory_2026.png",
+      "cover": "environments_art_The_Last_Memory_2026.png",
       "alt": "Two figures sitting face to face in a dark, overgrown temple courtyard with a small glowing bloom in the doorway",
       "description": "Two figures sit facing each other in a dark, overgrown temple courtyard, lit only by a small bioluminescent bloom in the doorway."
     },
@@ -20,7 +20,7 @@
       "title": "Wanderers",
       "category": "environment",
       "year": "2026",
-      "image": "environments_art_Wanderers_2026.png",
+      "cover": "environments_art_Wanderers_2026.png",
       "alt": "Two pale figures walking over golden sand dunes under a low sun, casting long shadows",
       "description": "Two pale figures cross golden dunes under a low sun, their shadows stretching long across the sand."
     },
@@ -29,34 +29,127 @@
       "title": "Ascension",
       "category": "environment",
       "year": "2025",
-      "image": "environments_art_ Ascension_2025.png",
+      "cover": "environments_art_ Ascension_2025.png",
       "alt": "A golden figure floating in a shaft of light above a dark, flooded cavern hung with stalactites",
       "description": "A golden figure rises through a shaft of light in a flooded cavern, framed by hanging stalactites and teal-lit brickwork."
+    },
+    {
+      "slug": "terra",
+      "title": "Terra Soda Can",
+      "category": "product",
+      "year": "2025",
+      "cover": "Product_Placement_Advert_Cover_Terra_SodaCan_2025.jpg",
+      "alt": "A lime soda can in front of an illustrated tree, surrounded by lime slices, leaves and splashes",
+      "description": "A lime soda can carried from clay model to finished artwork: label design, condensation and splash work, with a turntable of the final can.",
+      "media": [
+        {
+          "image": "Product_Placement_Advert_Cover_Terra_SodaCan_2025.jpg",
+          "label": "Key visual",
+          "alt": "A lime soda can in front of an illustrated tree, surrounded by lime slices, leaves and splashes"
+        },
+        {
+          "image": "Product_Placement_Advert_Terra_SodaCan_2025.png",
+          "label": "Render",
+          "alt": "The finished lime soda can, beaded with condensation, on a pale studio background"
+        },
+        {
+          "image": "Product_Placement_Advert_Terra_SodaCan_Black_and_White_2025.png",
+          "label": "Clay",
+          "alt": "An untextured grey clay render of the same can, showing its form and water droplets"
+        },
+        { "video": "terra-turntable", "label": "Turntable" }
+      ]
+    },
+    {
+      "slug": "zest-and-zing",
+      "title": "Z&Z Soda Can",
+      "category": "product",
+      "year": "2025",
+      "cover": "Product_Placement_Advert_Z&Z_SodaCan_2025.png",
+      "alt": "A blood orange soda can beaded with condensation on a soft pink studio background",
+      "description": "A blood orange soda can in label artwork, brushed metal and condensation, shown as a finished render, a clay pass and a turntable.",
+      "media": [
+        {
+          "image": "Product_Placement_Advert_Z&Z_SodaCan_2025.png",
+          "label": "Render",
+          "alt": "A blood orange soda can beaded with condensation on a soft pink studio background"
+        },
+        {
+          "image": "Product_Placement_Advert_Z&Z_SodaCan_Black_and_White_2025.png",
+          "label": "Clay",
+          "alt": "An untextured grey clay render of the same can, showing its form and water droplets"
+        },
+        { "video": "zest-zing-turntable", "label": "Turntable" }
+      ]
+    },
+    {
+      "slug": "silk-lotus",
+      "title": "Silk Lotus Face Serum",
+      "category": "product",
+      "year": "2025",
+      "cover": "Product_Placement_Advert_Silk_Lotus_Face Serum_2025.png",
+      "alt": "A glass serum dropper bottle standing on still pink water, mirrored in the surface",
+      "description": "A face serum bottle in glass and gold, standing on still water, shown as a finished render and as a clay pass.",
+      "media": [
+        {
+          "image": "Product_Placement_Advert_Silk_Lotus_Face Serum_2025.png",
+          "label": "Render",
+          "alt": "A glass serum dropper bottle standing on still pink water, mirrored in the surface"
+        },
+        {
+          "image": "Product_Placement_Advert_Silk_Lotus_Face Serum_Black_and_White_2025.png",
+          "label": "Clay",
+          "alt": "An untextured grey clay render of the serum bottle, rippling the water beneath it"
+        }
+      ]
+    },
+    {
+      "slug": "ioi-awards",
+      "title": "IOI Awards",
+      "category": "hard-surface",
+      "year": "2023",
+      "cover": "Hard_Surface_Modeling_ioi_award_Cover_2023.png",
+      "alt": "Five slate and green glass award trophies lined up, each engraved with a different year number",
+      "description": "A set of five long-service awards in slate and green glass, one for each milestone from one year to twenty, each with an engraved plate.",
+      "media": [
+        {
+          "image": "Hard_Surface_Modeling_ioi_award_Cover_2023.png",
+          "label": "Line-up",
+          "alt": "Five slate and green glass award trophies lined up, each engraved with a different year number"
+        },
+        { "video": "ioi-award-1", "label": "1 year" },
+        { "video": "ioi-award-5", "label": "5 years" },
+        { "video": "ioi-award-10", "label": "10 years" },
+        { "video": "ioi-award-15", "label": "15 years" },
+        { "video": "ioi-award-20", "label": "20 years" }
+      ]
+    },
+    {
+      "slug": "mk1-medallion",
+      "title": "MK1 Promotional Medallion",
+      "category": "hard-surface",
+      "year": "2023",
+      "alt": "A gold commemorative medallion turning against black, a dragon crest on one face and a fighter on the other",
+      "description": "A gold promotional medallion turning on a black stage: a dragon crest raised on one face, a fighter engraved on the other.",
+      "media": [
+        { "video": "mk1-medallion", "label": "Turntable" }
+      ]
     },
     {
       "slug": "fractured-world",
       "title": "Fractured World",
       "category": "environment",
       "year": "2022",
-      "image": "environments_art_ Fractured_World_2022.png",
+      "cover": "environments_art_ Fractured_World_2022.png",
       "alt": "A giant figure traced in electric-blue light rising from a rocky surface in space, holding a small planet",
       "description": "A giant figure traced in electric-blue light rises from a rocky surface into open space, holding a small planet in one hand."
-    },
-    {
-      "slug": "crawling",
-      "title": "Crawling",
-      "category": "motion",
-      "year": "2022",
-      "video": "crawling",
-      "alt": "A figure covered in rippling red and blue light crawling towards the camera across a dark floor",
-      "description": "A figure wrapped in rippling red and blue light crawls towards the camera across a dark, reflective floor."
     },
     {
       "slug": "temple-of-mind",
       "title": "Temple of Mind",
       "category": "environment",
       "year": "2022",
-      "image": "environments_art_Temple of Mind_2022 .png",
+      "cover": "environments_art_Temple of Mind_2022 .png",
       "alt": "A seated figure on a circular platform above the clouds with a red arched bridge rising to a torii gate",
       "description": "A lone figure rests on a circular platform above the clouds, where a red arched bridge climbs to a torii gate."
     },
@@ -65,52 +158,27 @@
       "title": "Departure",
       "category": "environment",
       "year": "2022",
-      "image": "environments_art_Departure_2022.png",
+      "cover": "environments_art_Departure_2022.png",
       "alt": "A small boat on calm water between two wooded islands at sunset, with birds in the sky",
       "description": "A small boat waits between two wooded islands as the sun sets over calm water."
-    },
-    {
-      "slug": "snowbound",
-      "title": "Snowbound",
-      "category": "environment",
-      "year": "2022",
-      "image": "environments_art_ Snowbound_2022.png",
-      "alt": "A lone figure meditating in rolling snow during snowfall, with a distant stone tower",
-      "description": "A lone figure meditates in a field of drifting snow, a distant stone tower just visible through the haze."
-    },
-    {
-      "slug": "resonance",
-      "title": "Resonance",
-      "category": "environment",
-      "year": "2021",
-      "image": "environments_art_ Resonance_2021.png",
-      "alt": "A kneeling figure at the end of a tunnel of glowing magenta rings reflected in still water at blue hour",
-      "description": "A kneeling figure at the end of a tunnel of glowing magenta rings, doubled in the still water of a blue-hour shoreline."
     },
     {
       "slug": "pendulum",
       "title": "Pendulum",
       "category": "motion",
       "year": "2021",
-      "video": "pendulum",
       "alt": "Rows of glowing pink and amber orbs swinging on long strings against a dark background",
-      "description": "A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle."
-    },
-    {
-      "slug": "genesis",
-      "title": "Genesis",
-      "category": "environment",
-      "year": "2021",
-      "image": "environments_art_ Genesis_2021.png",
-      "alt": "A crouching figure in a flooded colonnade facing a blazing golden disc where two hands cradle an egg",
-      "description": "A figure crouches in a flooded colonnade before a blazing golden disc, where two hands cradle an egg."
+      "description": "A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle.",
+      "media": [
+        { "video": "pendulum", "label": "Film" }
+      ]
     },
     {
       "slug": "limbo",
       "title": "Limbo",
       "category": "environment",
       "year": "2021",
-      "image": "environments_art_Limbo_2021.png",
+      "cover": "environments_art_Limbo_2021.png",
       "alt": "A figure draped in a white sheet standing on still water while bodies hang limp in the misty air",
       "description": "A draped, faceless figure stands on mirror-still water while bodies hang motionless in the misty air around it."
     },
@@ -119,18 +187,9 @@
       "title": "Fruits & Juice",
       "category": "hard-surface",
       "year": "2019",
-      "image": "Hard_Surface_Fruits_and_Juice_2019.png",
+      "cover": "Hard_Surface_Modeling_Fruits_and_Juice_2019.png",
       "alt": "A glass of juice with ice cubes and a straw between an apple and an orange under soft pink light",
       "description": "A study in glass, ice and liquid: a glass of juice with ice and a straw, set between an apple and an orange under soft pink light."
-    },
-    {
-      "slug": "water-pillar",
-      "title": "Water Pillar",
-      "category": "motion",
-      "year": "2019",
-      "video": "water-pillar",
-      "alt": "A spiralling column of blue water twisting upwards against a pale sky",
-      "description": "A column of water spirals up from the ground and twists into shape against a pale sky, then fades out to restart the loop."
     }
   ]
 }
