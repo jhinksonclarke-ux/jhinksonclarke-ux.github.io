@@ -59,6 +59,14 @@ const clips = [
     src: 'Product_Placement_Advert_Z&Z_SodaCan_Turntable_2025.mp4', slug: 'zest-zing-turntable', size: 1080, fps: 30, crf: 23,
     preview: { start: 0, duration: 3.3 }, poster: 1,
   },
+  {
+    src: 'Product_Placement_Advert_Aurevia_Turntable_Face_Cream_Tube_2026.mp4', slug: 'aurevia-turntable', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 0.2,
+  },
+  {
+    src: 'Hard_Surface_Modeling_VFB_Stuttgart_Champions_League_Roblox_UGC_Clothing_2024.mp4', slug: 'vfb-stuttgart-roblox-ugc', size: 1080, fps: 30, crf: 23,
+    preview: { start: 0, duration: 3.3 }, poster: 0.3,
+  },
 ];
 
 const H264 = ['-c:v', 'libx264', '-preset', 'slow', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-movflags', '+faststart'];

@@ -25,6 +25,36 @@
       "description": "Two pale figures cross golden dunes under a low sun, their shadows stretching long across the sand."
     },
     {
+      "slug": "aurevia",
+      "title": "Aurevia Face Cream",
+      "category": "product",
+      "year": "2026",
+      "cover": "Product_Placement_Advert_Cover_Aurevia_2025.jpg",
+      "alt": "A pale blue face cream tube standing on marble beside folded silk, under Korean skincare copy",
+      "description": "A hydrating face cream tube in pale blue and lilac, taken from clay model to finished pack shot, with a Korean-language key visual and a turntable.",
+      "media": [
+        {
+          "image": "Product_Placement_Advert_Cover_Aurevia_2025.jpg",
+          "label": "Key visual",
+          "alt": "A pale blue face cream tube standing on marble beside folded silk, under Korean skincare copy"
+        },
+        {
+          "image": "Product_Placement_Advert_Aurevia_Face_Cream_Tube_2026.png",
+          "label": "Render",
+          "alt": "The finished face cream tube, pale blue and lilac, on a soft blue studio background"
+        },
+        {
+          "image": "Product_Placement_Advert_Aurevia_Face_Cream_Tube_Black_and_White_2026.mp4.png",
+          "label": "Clay",
+          "alt": "An untextured grey clay render of the same tube, showing its shape and seam"
+        },
+        {
+          "video": "aurevia-turntable",
+          "label": "Turntable"
+        }
+      ]
+    },
+    {
       "slug": "ascension",
       "title": "Ascension",
       "category": "environment",
@@ -57,7 +87,10 @@
           "label": "Clay",
           "alt": "An untextured grey clay render of the same can, showing its form and water droplets"
         },
-        { "video": "terra-turntable", "label": "Turntable" }
+        {
+          "video": "terra-turntable",
+          "label": "Turntable"
+        }
       ]
     },
     {
@@ -79,7 +112,10 @@
           "label": "Clay",
           "alt": "An untextured grey clay render of the same can, showing its form and water droplets"
         },
-        { "video": "zest-zing-turntable", "label": "Turntable" }
+        {
+          "video": "zest-zing-turntable",
+          "label": "Turntable"
+        }
       ]
     },
     {
@@ -104,6 +140,20 @@
       ]
     },
     {
+      "slug": "vfb-stuttgart-roblox-ugc",
+      "title": "VfB Stuttgart Champions League Roblox UGC Clothing",
+      "category": "hard-surface",
+      "year": "2024",
+      "alt": "A stylised avatar wearing a white football kit with a red chest band, Champions League sleeve badge and red socks",
+      "description": "A Champions League match kit built as Roblox UGC clothing: white shirt with a red chest band, badges, shorts and red socks, turned through a full rotation on an avatar.",
+      "media": [
+        {
+          "video": "vfb-stuttgart-roblox-ugc",
+          "label": "Turntable"
+        }
+      ]
+    },
+    {
       "slug": "ioi-awards",
       "title": "IOI Awards",
       "category": "hard-surface",
@@ -117,11 +167,26 @@
           "label": "Line-up",
           "alt": "Five slate and green glass award trophies lined up, each engraved with a different year number"
         },
-        { "video": "ioi-award-1", "label": "1 year" },
-        { "video": "ioi-award-5", "label": "5 years" },
-        { "video": "ioi-award-10", "label": "10 years" },
-        { "video": "ioi-award-15", "label": "15 years" },
-        { "video": "ioi-award-20", "label": "20 years" }
+        {
+          "video": "ioi-award-1",
+          "label": "1 year"
+        },
+        {
+          "video": "ioi-award-5",
+          "label": "5 years"
+        },
+        {
+          "video": "ioi-award-10",
+          "label": "10 years"
+        },
+        {
+          "video": "ioi-award-15",
+          "label": "15 years"
+        },
+        {
+          "video": "ioi-award-20",
+          "label": "20 years"
+        }
       ]
     },
     {
@@ -132,7 +197,10 @@
       "alt": "A gold commemorative medallion turning against black, a dragon crest on one face and a fighter on the other",
       "description": "A gold promotional medallion turning on a black stage: a dragon crest raised on one face, a fighter engraved on the other.",
       "media": [
-        { "video": "mk1-medallion", "label": "Turntable" }
+        {
+          "video": "mk1-medallion",
+          "label": "Turntable"
+        }
       ]
     },
     {
@@ -170,7 +238,10 @@
       "alt": "Rows of glowing pink and amber orbs swinging on long strings against a dark background",
       "description": "A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle.",
       "media": [
-        { "video": "pendulum", "label": "Film" }
+        {
+          "video": "pendulum",
+          "label": "Film"
+        }
       ]
     },
     {

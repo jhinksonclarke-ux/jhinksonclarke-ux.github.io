@@ -333,9 +333,9 @@ function brandsMarkup(logos) {
     { word: 'Olympics' },
     { logo: 'vfb-stuttgart', name: 'VfB Stuttgart' },
     { logo: 'universal-music-group', name: 'Universal Music Group' },
-    { logo: 'metamerch', name: 'MetaMerch.io' },
-    { logo: 'io-interactive', name: 'IO Interactive' },
     { logo: 'warner-bros', name: 'Warner Bros' },
+    { logo: 'io-interactive', name: 'IO Interactive' },
+    { logo: 'metamerch', name: 'MetaMerch.io' },
   ];
   return brands.map((b) => {
     if (b.word) return `\n            <li class="brand-item brand-item--word"><span class="brand-word">${b.word}</span></li>`;
