@@ -141,7 +141,7 @@
     },
     {
       "slug": "vfb-stuttgart-roblox-ugc",
-      "title": "VfB Stuttgart Champions League Roblox UGC Clothing",
+      "title": "VfB Stuttgart Roblox UGC Kit",
       "category": "hard-surface",
       "year": "2024",
       "alt": "A stylised avatar wearing a white football kit with a red chest band, Champions League sleeve badge and red socks",
@@ -229,20 +229,6 @@
       "cover": "environments_art_Departure_2022.png",
       "alt": "A small boat on calm water between two wooded islands at sunset, with birds in the sky",
       "description": "A small boat waits between two wooded islands as the sun sets over calm water."
-    },
-    {
-      "slug": "pendulum",
-      "title": "Pendulum",
-      "category": "motion",
-      "year": "2021",
-      "alt": "Rows of glowing pink and amber orbs swinging on long strings against a dark background",
-      "description": "A wave of glowing pink and amber orbs swings on long strings, drifting in and out of phase over a single 104-second cycle.",
-      "media": [
-        {
-          "video": "pendulum",
-          "label": "Film"
-        }
-      ]
     },
     {
       "slug": "limbo",

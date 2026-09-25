@@ -24,10 +24,6 @@ const FFMPEG = process.env.FFMPEG || 'ffmpeg';
 // middle of a long piece still loops without a visible jump.
 const clips = [
   {
-    src: 'MotionLoop_Pendulum_2021.mp4', slug: 'pendulum', size: 1024, fps: 30, crf: 27,
-    preview: { start: 34, duration: 8, crossfade: 1 }, poster: 36,
-  },
-  {
     src: 'Hard_Surface_Modeling_ioi_award_design_yr_1_Turntable_2023.mp4', slug: 'ioi-award-1', size: 1080, fps: 30, crf: 23,
     preview: { start: 0, duration: 3.3 }, poster: 1,
   },
