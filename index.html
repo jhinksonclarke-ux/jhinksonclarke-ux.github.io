@@ -71,17 +71,17 @@
     @font-face {
       font-family: "Saira Fallback";
       src: local("Arial");
-      size-adjust: 98%;
-      ascent-override: 102%;
-      descent-override: 34%;
+      size-adjust: 102.46%;
+      ascent-override: 111.27%;
+      descent-override: 42.94%;
       line-gap-override: 0%;
     }
     @font-face {
       font-family: "Saira Display Fallback";
-      src: local("Arial Black"), local("Arial Bold");
-      size-adjust: 96%;
-      ascent-override: 98%;
-      descent-override: 30%;
+      src: local("Arial Black");
+      size-adjust: 93.04%;
+      ascent-override: 122.53%;
+      descent-override: 47.29%;
       line-gap-override: 0%;
     }
     :root {
@@ -321,9 +321,10 @@
         calc(var(--ex) * var(--d) * 16) calc(var(--ey) * var(--d) * 22) calc(var(--d) * 30) var(--drop);
     }
     .hero__line { display: block; white-space: nowrap; }
-    .hero__line--last { display: flex; flex-wrap: wrap; align-items: baseline; column-gap: .35em; }
     .hero__post {
-      font: 600 max(1rem, .19em)/1 var(--font-text);
+      display: block;
+      margin-top: .12em;
+      font: 600 max(1rem, .19em)/1.2 var(--font-text);
       letter-spacing: .02em;
       color: var(--ink-soft);
       text-shadow: none;
@@ -509,7 +510,7 @@
     .section-title { font-size: clamp(2.1rem, 5vw, 3.75rem); }
 
     .brands { background: var(--navy); color: #E7EDF2; color-scheme: dark; }
-    .brands .section-title { max-width: 16ch; }
+    .brands .section-title { max-width: 10em; }
     .brands__lede { margin-top: 1rem; max-width: 36rem; color: #A7BACB; }
     .brands__grid { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: clamp(2.5rem, 7vh, 4.5rem); }
     /* Hairlines come from each tile, so an odd number of logos leaves no empty cells. */
@@ -543,7 +544,7 @@
       .facts { margin-top: 3rem; }
     }
 
-    .contact .section-title { max-width: 15ch; font-size: clamp(2.25rem, 6vw, 4.75rem); }
+    .contact .section-title { max-width: 9.3em; font-size: clamp(2.25rem, 6vw, 4.75rem); }
     .contact__lede { margin-top: 1.25rem; max-width: 30rem; color: var(--ink-soft); font-size: 1.15rem; }
     .contact__email {
       display: inline-block; margin-top: clamp(2rem, 6vh, 3.5rem);
