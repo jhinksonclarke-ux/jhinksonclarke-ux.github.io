@@ -547,7 +547,10 @@
     .contact .section-title { max-width: 9.3em; font-size: clamp(2.25rem, 6vw, 4.75rem); }
     .contact__lede { margin-top: 1.25rem; max-width: 30rem; color: var(--ink-soft); font-size: 1.15rem; }
     .contact__email {
-      display: inline-block; margin-top: clamp(2rem, 6vh, 3.5rem);
+      /* min-height keeps the tap target comfortable where the type is small;
+         on wide screens the text is already taller than this. */
+      display: inline-flex; align-items: center; min-height: 2.75rem;
+      margin-top: clamp(2rem, 6vh, 3.5rem);
       font: 800 clamp(1.3rem, 5.4vw, 3.4rem)/1.1 var(--font-display);
       overflow-wrap: anywhere; text-decoration-thickness: .06em; text-underline-offset: .18em;
       text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
