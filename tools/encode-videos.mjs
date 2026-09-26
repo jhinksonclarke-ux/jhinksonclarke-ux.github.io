@@ -9,7 +9,7 @@
 // Needs ffmpeg on PATH, or FFMPEG=C:\path\to\ffmpeg.exe in the environment.
 
 import { spawnSync } from 'node:child_process';
-import { mkdirSync, statSync } from 'node:fs';
+import { existsSync, mkdirSync, statSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -52,7 +52,7 @@ const clips = [
     preview: { start: 0, duration: 3.3 }, poster: 1,
   },
   {
-    src: 'Product_Placement_Advert_Z&Z_SodaCan_Turntable_2025.mp4', slug: 'zest-zing-turntable', size: 1080, fps: 30, crf: 23,
+    src: 'Product_Placement_Advert_Z&Z_SodaCan_Turntable_2024.mp4', slug: 'zest-zing-turntable', size: 1080, fps: 30, crf: 23,
     preview: { start: 0, duration: 3.3 }, poster: 1,
   },
   {
@@ -88,11 +88,18 @@ function mb(file) {
 mkdirSync(OUT, { recursive: true });
 mkdirSync(POSTERS, { recursive: true });
 
+const isFresh = (out, src) => existsSync(out) && statSync(out).mtimeMs >= statSync(src).mtimeMs;
+
 for (const clip of clips) {
   const input = join(MEDIA, clip.src);
   const full = join(OUT, `${clip.slug}.mp4`);
   const preview = join(OUT, `${clip.slug}-preview.mp4`);
   const poster = join(POSTERS, `${clip.slug}.png`);
+
+  if ([full, preview, poster].every((out) => isFresh(out, input))) {
+    console.log(`${clip.slug}: unchanged`);
+    continue;
+  }
 
   ffmpeg([
     '-i', input, '-map', '0:v:0', '-map', '0:a:0?',
