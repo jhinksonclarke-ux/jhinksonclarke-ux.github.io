@@ -98,10 +98,15 @@
       "title": "Z&Z Soda Can",
       "category": "product",
       "year": "2025",
-      "cover": "Product_Placement_Advert_Z&Z_SodaCan_2025.png",
-      "alt": "A blood orange soda can beaded with condensation on a soft pink studio background",
+      "cover": "Product_Placement_Advert_Cover_Z&Z_SodaCan_2025.png",
+      "alt": "A blood orange soda can inside a swirling vortex of red lightning, under the words Bring On The Zest",
       "description": "A blood orange soda can in label artwork, brushed metal and condensation, shown as a finished render, a clay pass and a turntable.",
       "media": [
+        {
+          "image": "Product_Placement_Advert_Cover_Z&Z_SodaCan_2025.png",
+          "label": "Key visual",
+          "alt": "A blood orange soda can inside a swirling vortex of red lightning, under the words Bring On The Zest"
+        },
         {
           "image": "Product_Placement_Advert_Z&Z_SodaCan_2025.png",
           "label": "Render",
@@ -123,10 +128,15 @@
       "title": "Silk Lotus Face Serum",
       "category": "product",
       "year": "2025",
-      "cover": "Product_Placement_Advert_Silk_Lotus_Face Serum_2025.png",
-      "alt": "A glass serum dropper bottle standing on still pink water, mirrored in the surface",
+      "cover": "Product_Placement_Advert_Cover_Silk_Lotus_Face Serum_2025.jpg",
+      "alt": "A serum bottle standing on rippling golden liquid beside a glass lotus, in a Chinese-language beauty advert",
       "description": "A face serum bottle in glass and gold, standing on still water, shown as a finished render and as a clay pass.",
       "media": [
+        {
+          "image": "Product_Placement_Advert_Cover_Silk_Lotus_Face Serum_2025.jpg",
+          "label": "Key visual",
+          "alt": "A serum bottle standing on rippling golden liquid beside a glass lotus, in a Chinese-language beauty advert"
+        },
         {
           "image": "Product_Placement_Advert_Silk_Lotus_Face Serum_2025.png",
           "label": "Render",
