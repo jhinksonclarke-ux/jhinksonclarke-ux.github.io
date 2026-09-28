@@ -157,6 +157,8 @@
 
     *, *::before, *::after { box-sizing: border-box; }
     html {
+      /* The only snap targets are the spiral card steps, so the page scrolls
+         freely. Sections deliberately carry no scroll-snap-align. */
       scroll-snap-type: y proximity;
       scrollbar-gutter: stable;
       -webkit-text-size-adjust: 100%;
@@ -271,7 +273,6 @@
       display: grid; align-content: end;
       padding: calc(var(--header-h) + 2rem) 0 clamp(3.5rem, 11vh, 7rem);
       overflow: clip;
-      scroll-snap-align: start;
     }
     .hero__floor {
       position: absolute; z-index: -1; left: -45%; right: -45%; bottom: 0; height: 150%;
@@ -342,7 +343,7 @@
 
     /* ------------------------------------------------------------ work: grid (no JS / reduced motion) */
 
-    .work { position: relative; padding: calc(var(--header-h) + 2rem) 0 5rem; scroll-snap-align: start; }
+    .work { position: relative; padding: calc(var(--header-h) + 2rem) 0 5rem; }
     .work__head { width: min(100% - 2 * var(--gutter), 75rem); margin-inline: auto; }
     .work__titlebar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; }
     .work__title { font-size: clamp(2.25rem, 5vw, 3.5rem); }
@@ -506,7 +507,7 @@
 
     /* ------------------------------------------------------------ planes */
 
-    .plane { min-height: 100svh; display: grid; align-content: center; padding-block: calc(var(--header-h) + 2rem) 4rem; scroll-snap-align: start; }
+    .plane { min-height: 100svh; display: grid; align-content: center; padding-block: calc(var(--header-h) + 2rem) 4rem; }
     .section-title { font-size: clamp(2.1rem, 5vw, 3.75rem); }
 
     .brands { background: var(--navy); color: #E7EDF2; color-scheme: dark; }
