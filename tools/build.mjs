@@ -15,7 +15,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
-const SITE_URL = 'https://jhinksonclarke-ux.github.io/';
+const SITE_URL = 'https://shaderjhc.co.uk/';
 const MEDIA = join(root, 'MEDIA');
 const POSTERS = join(root, '.work', 'posters');
 const OUT = {

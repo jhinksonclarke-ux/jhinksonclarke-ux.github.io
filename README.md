@@ -1,7 +1,7 @@
 # Jordan Hinkson-Clarke | Shader Jay
 
 One-page portfolio for Jordan Hinkson-Clarke, 3D Designer & Visualizer.
-Live at <https://jhinksonclarke-ux.github.io/>.
+Live at <https://shaderjhc.co.uk/>.
 
 Plain HTML, CSS and JavaScript with no framework, published by GitHub Pages
 straight from the `main` branch.
