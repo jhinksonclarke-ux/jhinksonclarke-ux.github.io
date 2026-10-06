@@ -513,10 +513,12 @@
     .brands { background: var(--navy); color: #E7EDF2; color-scheme: dark; }
     .brands .section-title { max-width: 10em; }
     .brands__lede { margin-top: 1rem; max-width: 36rem; color: #A7BACB; }
-    .brands__grid { display: grid; grid-template-columns: repeat(2, 1fr); margin-top: clamp(2.5rem, 7vh, 4.5rem); }
-    /* Hairlines come from each tile, so an odd number of logos leaves no empty cells. */
-    .brand-item { display: grid; place-items: center; min-height: clamp(7rem, 16vh, 10rem); padding: 1.5rem; box-shadow: 0 0 0 1px #1C3F5B; }
-    .brand-item:last-child:nth-child(2n + 1) { grid-column: 1 / -1; }
+    /* Hairlines come from each tile, so a part-filled last row would leave a
+       hole. Six tracks let the leftovers widen to fill it: tiles span 3 (two
+       per row) or 2 (three per row), and a short final row shares the width. */
+    .brands__grid { display: grid; grid-template-columns: repeat(6, 1fr); margin-top: clamp(2.5rem, 7vh, 4.5rem); }
+    .brand-item { display: grid; place-items: center; min-height: clamp(7rem, 16vh, 10rem); padding: 1.5rem; box-shadow: 0 0 0 1px #1C3F5B; grid-column: span 3; }
+    .brand-item:last-child:nth-child(2n + 1) { grid-column: span 6; }
     .brand-item img { width: auto; height: var(--logo-h, 3rem); max-width: 100%; object-fit: contain; }
     .brand-item--0207-def-jam { --logo-h: clamp(2.4rem, 5vw, 3.4rem); }
     .brand-item--vfb-stuttgart { --logo-h: clamp(3.4rem, 8vw, 5rem); }
@@ -524,11 +526,14 @@
     .brand-item--metamerch { --logo-h: clamp(1.2rem, 2.6vw, 1.75rem); }
     .brand-item--io-interactive { --logo-h: clamp(2.4rem, 5vw, 3.4rem); }
     .brand-item--warner-bros { --logo-h: clamp(3.2rem, 7vw, 4.6rem); }
+    .brand-item--hyperfilm { --logo-h: clamp(2.6rem, 5.4vw, 3.6rem); }
     .brand-word { font: 800 clamp(1.4rem, 3.6vw, 2.2rem)/1 var(--font-display); letter-spacing: .01em; }
     @media (min-width: 48em) {
-      .brands__grid { grid-template-columns: repeat(3, 1fr); }
-      .brand-item:last-child:nth-child(2n + 1) { grid-column: auto; }
-      .brand-item:last-child:nth-child(3n + 1) { grid-column: 1 / -1; }
+      .brand-item { grid-column: span 2; }
+      .brand-item:last-child:nth-child(2n + 1) { grid-column: span 2; }
+      .brand-item:last-child:nth-child(3n + 1) { grid-column: span 6; }
+      .brand-item:nth-last-child(2):nth-child(3n + 1),
+      .brand-item:last-child:nth-child(3n + 2) { grid-column: span 3; }
     }
 
     .story__grid { display: grid; gap: 2.5rem; }
@@ -958,6 +963,7 @@
             <li class="brand-item brand-item--warner-bros"><img src="assets/img/brands/warner-bros.png" width="166" height="160" alt="Warner Bros" loading="lazy" decoding="async"></li>
             <li class="brand-item brand-item--io-interactive"><img src="assets/img/brands/io-interactive.png" width="289" height="160" alt="IO Interactive" loading="lazy" decoding="async"></li>
             <li class="brand-item brand-item--metamerch"><img src="assets/img/brands/metamerch.png" width="939" height="160" alt="MetaMerch.io" loading="lazy" decoding="async"></li>
+            <li class="brand-item brand-item--hyperfilm"><img src="assets/img/brands/hyperfilm.png" width="309" height="160" alt="HyperFilm" loading="lazy" decoding="async"></li>
           <!-- /build:brands --></ul>
       </div>
     </section>

@@ -151,6 +151,7 @@ async function buildBrandLogos() {
     { slug: 'metamerch', file: 'Worked_with_logo_MetaMerch.png', coverage: (r, g, b, a) => a },
     { slug: 'io-interactive', file: 'Worked_with_logo_io-interactive.png', coverage: (r, g, b, a) => a },
     { slug: 'warner-bros', file: 'Worked_with_logo_Warner Bros.png', coverage: (r, g, b, a) => a },
+    { slug: 'hyperfilm', file: 'Worked_with_logo_HyperFilm.png', coverage: (r, g, b, a) => a },
   ];
   const result = {};
   for (const logo of logos) {
@@ -336,6 +337,7 @@ function brandsMarkup(logos) {
     { logo: 'warner-bros', name: 'Warner Bros' },
     { logo: 'io-interactive', name: 'IO Interactive' },
     { logo: 'metamerch', name: 'MetaMerch.io' },
+    { logo: 'hyperfilm', name: 'HyperFilm' },
   ];
   return brands.map((b) => {
     if (b.word) return `\n            <li class="brand-item brand-item--word"><span class="brand-word">${b.word}</span></li>`;
