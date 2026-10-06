@@ -514,11 +514,12 @@
     .brands .section-title { max-width: 10em; }
     .brands__lede { margin-top: 1rem; max-width: 36rem; color: #A7BACB; }
     /* Hairlines come from each tile, so a part-filled last row would leave a
-       hole. Six tracks let the leftovers widen to fill it: tiles span 3 (two
-       per row) or 2 (three per row), and a short final row shares the width. */
-    .brands__grid { display: grid; grid-template-columns: repeat(6, 1fr); margin-top: clamp(2.5rem, 7vh, 4.5rem); }
-    .brand-item { display: grid; place-items: center; min-height: clamp(7rem, 16vh, 10rem); padding: 1.5rem; box-shadow: 0 0 0 1px #1C3F5B; grid-column: span 3; }
-    .brand-item:last-child:nth-child(2n + 1) { grid-column: span 6; }
+       hole. Twelve tracks let the leftovers widen to fill it: tiles span 6, 4
+       or 3 for two, three or four across, and whatever is left on the final
+       row divides it evenly. Each column count owns a width band so its
+       leftover rules cannot leak into the next one. */
+    .brands__grid { display: grid; grid-template-columns: repeat(12, 1fr); margin-top: clamp(2.5rem, 7vh, 4.5rem); }
+    .brand-item { display: grid; place-items: center; min-height: clamp(7rem, 16vh, 10rem); padding: 1.5rem; box-shadow: 0 0 0 1px #1C3F5B; grid-column: span 6; }
     .brand-item img { width: auto; height: var(--logo-h, 3rem); max-width: 100%; object-fit: contain; }
     .brand-item--0207-def-jam { --logo-h: clamp(2.4rem, 5vw, 3.4rem); }
     .brand-item--vfb-stuttgart { --logo-h: clamp(3.4rem, 8vw, 5rem); }
@@ -528,12 +529,23 @@
     .brand-item--warner-bros { --logo-h: clamp(3.2rem, 7vw, 4.6rem); }
     .brand-item--hyperfilm { --logo-h: clamp(2.6rem, 5.4vw, 3.6rem); }
     .brand-word { font: 800 clamp(1.4rem, 3.6vw, 2.2rem)/1 var(--font-display); letter-spacing: .01em; }
-    @media (min-width: 48em) {
-      .brand-item { grid-column: span 2; }
-      .brand-item:last-child:nth-child(2n + 1) { grid-column: span 2; }
-      .brand-item:last-child:nth-child(3n + 1) { grid-column: span 6; }
+    @media (max-width: 47.99em) {
+      .brand-item:last-child:nth-child(2n + 1) { grid-column: span 12; }
+    }
+    @media (min-width: 48em) and (max-width: 63.99em) {
+      .brand-item { grid-column: span 4; }
+      .brand-item:last-child:nth-child(3n + 1) { grid-column: span 12; }
       .brand-item:nth-last-child(2):nth-child(3n + 1),
-      .brand-item:last-child:nth-child(3n + 2) { grid-column: span 3; }
+      .brand-item:last-child:nth-child(3n + 2) { grid-column: span 6; }
+    }
+    @media (min-width: 64em) {
+      .brand-item { grid-column: span 3; }
+      .brand-item:last-child:nth-child(4n + 1) { grid-column: span 12; }
+      .brand-item:nth-last-child(2):nth-child(4n + 1),
+      .brand-item:last-child:nth-child(4n + 2) { grid-column: span 6; }
+      .brand-item:nth-last-child(3):nth-child(4n + 1),
+      .brand-item:nth-last-child(2):nth-child(4n + 2),
+      .brand-item:last-child:nth-child(4n + 3) { grid-column: span 4; }
     }
 
     .story__grid { display: grid; gap: 2.5rem; }
